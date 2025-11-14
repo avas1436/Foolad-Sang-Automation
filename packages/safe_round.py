@@ -155,3 +155,5 @@ class NumberRounder:
 
 #     # تست contains
 #     print(3.14 in rounder)  # True
+
+#     print(rounder)
