@@ -47,6 +47,9 @@ class Jalali:
 # )
 # cur = con.cursor()
 # cur.execute("SELECT date, hour FROM data LIMIT 5")
+# m = cur.fetchall()
+
+
 # date_list = [
 #     ("1404/06/01", "08:00"),
 #     ("1404/06/01", "10:00"),
@@ -56,7 +59,7 @@ class Jalali:
 #     ("1404/06/01", "20:00"),
 # ]
 
-# m = cur.fetchall()
+
 # for date, time in date_list:
 #     t = Jalali()
 #     print(t.converter(date, time))
