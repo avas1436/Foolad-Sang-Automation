@@ -65,3 +65,6 @@ $RECYCLE.BIN/
 # Database files
 *.db
 *.sqlite3
+
+# Excel file
+*.xlsx
