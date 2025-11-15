@@ -1,6 +1,14 @@
-from datetime import timestamp
+import datetime
+import logging
 
 import jdatetime
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    filename="datetime.log",
+    filemode="w",
+    format="%(name)s-%(levelname)s-%(funcName)s:%(lineno)d-%(message)s",
+)
 
 
 class Jalali:
@@ -18,8 +26,9 @@ class Jalali:
             year=year, month=month, day=day, hour=hour, minute=minute
         )
         gregorian_dt = persian_dt.togregorian()
-
-        return int(gregorian_dt.timestamp())
+        time_stamp = int(gregorian_dt.timestamp())
+        logging.debug(f"for datetime {str(persian_dt)} timestamp is {time_stamp}")
+        return time_stamp
 
     def edith_time(self, hour: int) -> str:
         if 0 <= hour <= 9:
@@ -38,7 +47,16 @@ class Jalali:
 # )
 # cur = con.cursor()
 # cur.execute("SELECT date, hour FROM data LIMIT 5")
+# date_list = [
+#     ("1404/06/01", "08:00"),
+#     ("1404/06/01", "10:00"),
+#     ("1404/06/01", "12:00"),
+#     ("1404/06/01", "14:00"),
+#     ("1404/06/01", "16:00"),
+#     ("1404/06/01", "20:00"),
+# ]
+
 # m = cur.fetchall()
-# for date, time in m:
+# for date, time in date_list:
 #     t = Jalali()
 #     print(t.converter(date, time))
