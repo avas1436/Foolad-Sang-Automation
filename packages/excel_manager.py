@@ -193,6 +193,3 @@ class ExcelManager:
         """Close the workbook."""
         if self.workbook:
             self.workbook.close()
-
-
-ExcelMan
