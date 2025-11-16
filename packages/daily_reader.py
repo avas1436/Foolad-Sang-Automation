@@ -60,7 +60,10 @@ class Daily:
             avg_data[1],  # weather
             rounder(avg_data[2]),  # tonage
             avg_data[3],  # truck
-            rounder(avg_data[4]),  # par_0_avg
+            rounder(avg_data[4]),  # CO2_avg
+            rounder(avg_data[5]),  # par_10_avg
+            rounder(avg_data[6]),  # par_5_avg
+            rounder(avg_data[7]),  # par_0_avg
             rounder(avg_data[8]),  # par_1060_avg
             rounder(avg_data[9]),  # par_70_avg
         ]
