@@ -6,7 +6,8 @@ from openpyxl.utils import cell
 
 class ExcelManager:
     """
-    Aclass for reading and writing cells and ranges in Excel files using openpyxl.
+    Aclass for reading and writing cells
+    and ranges in Excel files using openpyxl.
     """
 
     def __init__(self, filename: str):
@@ -61,10 +62,12 @@ class ExcelManager:
         Read values from a list of cell references.
 
         Args:
-            cell_references (List[str]): List of cell references (e.g., ['A1', 'B2', 'C3'])
+            cell_references (List[str]): List of cell references
+            (e.g., ['A1', 'B2', 'C3'])
 
         Returns:
-            List[Any]: List of cell values in the same order as input references
+            List[Any]: List of cell values in the same
+            order as input references
 
         Example:
             >>> manager.read_cells(['A1', 'B2', 'C3'])
