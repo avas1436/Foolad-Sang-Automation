@@ -81,5 +81,7 @@ class Daily:
         return bulk_data
 
 
-# d = Daily(file_name="daily.xlsx")
-# print(d.extract_bulk_avg(1, 3))
+# how to use
+# if __name__ == "__main__":
+#     d = Daily(file_name="daily.xlsx")
+#     print(d.extract_bulk_avg(1, 3))
