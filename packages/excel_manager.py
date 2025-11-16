@@ -28,7 +28,7 @@ class ExcelManager:
             create_if_missing (bool): Create new workbook if file doesn't exist
         """
         try:
-            self.workbook = load_workbook(self.filename)
+            self.workbook = load_workbook(self.filename, data_only=True, read_only=True)
             self.active_ws = self.workbook.active
         except FileNotFoundError:
             if create_if_missing:
@@ -37,6 +37,9 @@ class ExcelManager:
                 self.save()
             else:
                 raise FileNotFoundError(f"File {self.filename} not found")
+
+    def sheet_names(self) -> List[str]:
+        return self.workbook.sheetnames
 
     def set_active_sheet(self, sheet_name: str) -> None:
         """
