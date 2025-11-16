@@ -20,26 +20,30 @@ class ExcelManager:
         self.filename = filename
         self.workbook = None
         self.active_ws = None
+        self._is_readonly = False
 
-    def load_workbook(self, create_if_missing: bool = False) -> None:
-        """
-        Load an existing workbook or create a new one.
-
-        Args:
-            create_if_missing (bool): Create new workbook if file doesn't exist
-        """
+    def load_workbook(
+        self,
+        create_if_missing: bool = False,
+        read_only: bool = True,
+        data_only: bool = True,
+    ) -> None:
         try:
-            self.workbook = load_workbook(self.filename, data_only=True, read_only=True)
+            self.workbook = load_workbook(
+                self.filename, data_only=data_only, read_only=read_only
+            )
             self.active_ws = self.workbook.active
+            self._is_readonly = read_only
         except FileNotFoundError:
             if create_if_missing:
                 self.workbook = Workbook()
                 self.active_ws = self.workbook.active
+                self._is_readonly = False
                 self.save()
             else:
                 raise FileNotFoundError(f"File {self.filename} not found")
 
-    def sheet_names(self) -> List[str]:
+    def sheet_names(self):
         return self.workbook.sheetnames
 
     def set_active_sheet(self, sheet_name: str) -> None:
@@ -79,10 +83,13 @@ class ExcelManager:
         values = []
         for cell_ref in cell_references:
             try:
-                cell_addr = cell.coordinate_from_string(cell_ref)
+                # cell_addr = cell.coordinate_from_string(cell_ref)
                 values.append(self.active_ws[cell_ref].value)
             except Exception as e:
-                raise ValueError(f"Invalid cell reference: {cell_ref} - {str(e)}")
+                raise ValueError(
+                    f"""
+                Invalid cell reference: {cell_ref} - {str(e)}"""
+                )
 
         return values
 
@@ -91,7 +98,8 @@ class ExcelManager:
         Write values to a list of cell references.
 
         Args:
-            cell_references (List[str]): List of cell references (e.g., ['A1', 'B2', 'C3'])
+            cell_references
+            (List[str]): List of cell references (e.g., ['A1', 'B2', 'C3'])
             values (List[Any]): List of values to write
 
         Example:
@@ -101,15 +109,21 @@ class ExcelManager:
             self.load_workbook()
 
         if len(cell_references) != len(values):
-            raise ValueError("Number of cell references must match number of values")
+            raise ValueError(
+                """Number of cell references must match number of values"""
+            )
 
         for cell_ref, value in zip(cell_references, values):
             try:
                 self.active_ws[cell_ref] = value
             except Exception as e:
-                raise ValueError(f"Invalid cell reference: {cell_ref} - {str(e)}")
+                raise ValueError(
+                    f"""
+                        Invalid cell reference: {cell_ref} - {str(e)}
+                                 """
+                )
 
-        self.save()
+        self.save(self.filename)
 
     def read_range(self, start_cell: str, end_cell: str) -> List[List[Any]]:
         """
@@ -151,7 +165,10 @@ class ExcelManager:
             return range_data
 
         except Exception as e:
-            raise ValueError(f"Invalid range: {start_cell}:{end_cell} - {str(e)}")
+            raise ValueError(
+                f"""
+            Invalid range: {start_cell}:{end_cell} - {str(e)}"""
+            )
 
     def write_range(self, start_cell: str, data: List[List[Any]]) -> None:
         """
@@ -182,12 +199,16 @@ class ExcelManager:
                     cell_ref = f"{current_col}{current_row}"
                     self.active_ws[cell_ref] = value
 
-            self.save()
+            self.save(self.filename)
 
         except Exception as e:
-            raise ValueError(f"Invalid start cell or data: {start_cell} - {str(e)}")
+            raise ValueError(
+                f"""
+            Invalid start cell or data: {start_cell} - {str(e)}
+                             """
+            )
 
-    def save(self, filename: str = None) -> None:
+    def save(self, filename: str):
         """Save the workbook to file."""
         if self.workbook is None:
             raise ValueError("No workbook loaded")
