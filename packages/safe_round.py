@@ -1,5 +1,5 @@
 import math
-from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
+from decimal import ROUND_HALF_UP, Decimal
 from typing import Iterator, List, Optional, Union
 
 
