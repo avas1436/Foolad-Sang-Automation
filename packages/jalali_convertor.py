@@ -1,7 +1,7 @@
-import datetime
+# import datetime
 import logging
 
-import jdatetime
+from jdatetime import datetime
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -22,9 +22,7 @@ class Jalali:
         year, month, day = map(int, date.split("/"))
         hour, minute = map(int, time.split(":"))
 
-        persian_dt = jdatetime.datetime(
-            year=year, month=month, day=day, hour=hour, minute=minute
-        )
+        persian_dt = datetime(year=year, month=month, day=day, hour=hour, minute=minute)
         gregorian_dt = persian_dt.togregorian()
         time_stamp = int(gregorian_dt.timestamp())
         logging.debug(f"for datetime {str(persian_dt)} timestamp is {time_stamp}")
