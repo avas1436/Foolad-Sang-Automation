@@ -68,3 +68,6 @@ $RECYCLE.BIN/
 
 # Excel file
 *.xlsx
+
+# tokenfile
+eitta.py
