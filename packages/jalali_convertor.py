@@ -60,4 +60,4 @@ class Jalali:
 
 # for date, time in date_list:
 #     t = Jalali()
-#     print(t.converter(date, time))
+#     print(t(date, time))
