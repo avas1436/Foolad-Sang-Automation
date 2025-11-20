@@ -4,7 +4,7 @@ My initial goal is to automate Foolad Sang Laboratory's daily, weekly, monthly, 
 
 ## packages
 
-I separate each task into individual files to make them easier to manage and more efficient.
+I separate each task into individual files to make them easier to manage.
 
 ### daily_reader.py
 
