@@ -71,3 +71,11 @@ $RECYCLE.BIN/
 
 # tokenfile
 eitta.py
+
+# Selenium
+chromedriver
+chromedriver.exe
+geckodriver
+geckodriver.exe
+msedgedriver
+msedgedriver.exe
