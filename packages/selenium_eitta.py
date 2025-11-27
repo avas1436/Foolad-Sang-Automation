@@ -19,8 +19,9 @@ element = WebDriverWait(driver, 10).until(
 )
 
 if element:
-    print("are amoo josamesh")
-else:
-    print("element not found")
-
-input("press any key to close")
+    while True:
+        input("Please login to your account and tap enter")
+        if element:
+            continue
+        else:
+            break
