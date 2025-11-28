@@ -79,3 +79,7 @@ geckodriver
 geckodriver.exe
 msedgedriver
 msedgedriver.exe
+
+# chrome profile
+chrome_profile/
+chrome_profile_*/

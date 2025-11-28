@@ -1,3 +1,4 @@
+import os
 import time
 
 from selenium import webdriver
@@ -6,7 +7,39 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-driver = webdriver.Chrome()
+# پیدا کردن مسیر برنامه یعنی همان جایی که برنامه ایجاد می شود.
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+# فولدر پروفایل جدید داخل همان فولدر برنامه
+profile_path = os.path.join(base_dir, "chrome_profile")
+
+# اگر فولدر وجود ندارد، بساز
+if not os.path.exists(profile_path):
+    os.makedirs(profile_path)
+
+
+# کار این قسمت ذخیره اطلاعات ورود است
+options = webdriver.ChromeOptions()
+
+# تمامی اطلاعات وارد شده در برنامه در اینجا ذخیره خواهد شد.
+options.add_argument(f"user-data-dir={profile_path}")
+options.add_argument("--profile-directory=Default")  # مشخص کردن پروفایل
+options.add_argument("--no-first-run")  # جلوگیری از اجرای اولیه
+options.add_argument("--no-default-browser-check")  # جلوگیری از چک مرورگر پیشفرض
+options.add_argument("--disable-extensions")  # غیرفعال کردن اکستنشن‌ها
+options.add_experimental_option("excludeSwitches", ["enable-automation"])
+options.add_experimental_option('useAutomationExtension', False)
+
+
+# آپشن های اضافه برای اطمینان بیشتر
+options.add_argument("--disable-blink-features=AutomationControlled")
+options.add_experimental_option("excludeSwitches", ["enable-automation"])
+options.add_experimental_option('useAutomationExtension', False)
+
+
+# ایجاد درایور با آپشن‌ها
+driver = webdriver.Chrome(options=options)
+
 
 driver.get("https://web.eitaa.com/")
 
