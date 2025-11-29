@@ -83,3 +83,5 @@ msedgedriver.exe
 # chrome profile
 chrome_profile/
 chrome_profile_*/
+
+chat_output.txt

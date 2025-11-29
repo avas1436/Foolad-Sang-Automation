@@ -41,3 +41,43 @@ def extract_text_messages_until_timestamp(driver):
         chat_data.append({"time": time, "sender": sender, "text": text})
 
     return chat_data
+
+
+def scroling_chat(driver):
+    max_scrolls = 3  # کاهش به 3 چون قبلاً تست شده
+
+    try:
+        scrollable_div = driver.find_element(
+            By.CSS_SELECTOR, "div.scrollable.scrollable-y"
+        )
+
+        for scroll_count in range(1, max_scrolls + 1):
+            print(f"🔄 Scroll {scroll_count}/{max_scrolls}")
+
+            # روش ۱: اسکرول به پایین
+            driver.execute_script(
+                "arguments[0].scrollTop = arguments[0].scrollHeight", scrollable_div
+            )
+
+            time.sleep(2)
+
+            # بررسی موقعیت اسکرول
+            current_position = driver.execute_script(
+                "return arguments[0].scrollTop", scrollable_div
+            )
+            scroll_height = driver.execute_script(
+                "return arguments[0].scrollHeight", scrollable_div
+            )
+
+            print(f"📍 scroll position : {current_position} از {scroll_height}")
+
+            # اگر به انتها رسیده‌ایم
+            if current_position + 1000 >= scroll_height:
+                print("📌 first of chat")
+                break
+
+        return True
+
+    except Exception as e:
+        print(f"🚫 Scroll error: {e}")
+        return False

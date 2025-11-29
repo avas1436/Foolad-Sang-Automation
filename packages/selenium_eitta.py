@@ -10,7 +10,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from utils.eitta_chat_extractor import extract_text_messages_until_timestamp
+from utils.eitta_chat_extractor import (
+    extract_text_messages_until_timestamp,
+    scroling_chat,
+)
 from utils.find_chat_selenium_eitta import find_and_select_chat
 
 # پیدا کردن مسیر برنامه یعنی همان جایی که برنامه ایجاد می شود.
@@ -141,5 +144,7 @@ while True:
     )
     if command != "yes":
         break
+    else:
+        scroling_chat(driver=driver)
 
 input("press inter")
