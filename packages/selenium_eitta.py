@@ -1,6 +1,9 @@
 import os
 import time
 
+import lxml
+from bs4 import BeautifulSoup
+from click import command
 from fsgroup_regex import extract_kiln_data
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -115,9 +118,28 @@ else:
 chat_id = -51577627  # گروه کنترل کیفیت و آزمایشگاه
 
 
-# استفاده از تابع
+# استفاده از تابع برای باز کردن صفحه چت گروه فولاد سنگ
 find_and_select_chat(driver, chat_id)
 
-extract_text_messages_until_timestamp(driver=driver, until_timestamp=1764278558)
+# این قسمت تا جایی که رفرش کنیم تمامی اطلاعات را استخراج خواهد کرد
+while True:
+    chat_data = extract_text_messages_until_timestamp(driver=driver)
+
+    # overwrite file each time with English text
+    with open(file="chat_output.txt", mode="w", encoding="utf-8") as f:
+        for item in chat_data:
+            f.write(
+                f"Time: {item['time']} | Sender: {item['sender']} | Message: {item['text']}\n"
+            )
+
+    command = (
+        input(
+            "Type 'yes' to fetch more messages after scrolling, or press Enter to stop: "
+        )
+        .strip()
+        .lower()
+    )
+    if command != "yes":
+        break
 
 input("press inter")
