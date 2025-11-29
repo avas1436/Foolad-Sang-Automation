@@ -1,6 +1,7 @@
 from excel_manager import ExcelManager
-from jalali_convertor import Jalali
 from safe_round import NumberRounder
+
+from packages.utils.jalali_convertor import Jalali
 
 
 def extract_avg(sheetname: str, filename="daily.xlsx"):

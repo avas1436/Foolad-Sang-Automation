@@ -4,7 +4,6 @@ import time
 import lxml
 from bs4 import BeautifulSoup
 from click import command
-from fsgroup_regex import extract_kiln_data
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -15,6 +14,8 @@ from utils.eitta_chat_extractor import (
     scroling_chat,
 )
 from utils.find_chat_selenium_eitta import find_and_select_chat
+from utils.fsgroup_regex import extract_kiln_data
+from utils.jalali_convertor import Jalali
 
 # پیدا کردن مسیر برنامه یعنی همان جایی که برنامه ایجاد می شود.
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -123,17 +124,25 @@ chat_id = -51577627  # گروه کنترل کیفیت و آزمایشگاه
 
 # استفاده از تابع برای باز کردن صفحه چت گروه فولاد سنگ
 find_and_select_chat(driver, chat_id)
-
+t = Jalali()
 # این قسمت تا جایی که رفرش کنیم تمامی اطلاعات را استخراج خواهد کرد
 while True:
     chat_data = extract_text_messages_until_timestamp(driver=driver)
 
-    # overwrite file each time with English text
-    with open(file="chat_output.txt", mode="w", encoding="utf-8") as f:
-        for item in chat_data:
-            f.write(
-                f"Time: {item['time']} | Sender: {item['sender']} | Message: {item['text']}\n"
-            )
+    for item in chat_data:
+        send_time = item["time"]
+        if send_time == None:
+            continue
+
+        send_time_str = str(send_time).split(",")
+        send_time_timestamp = t(send_time_str[0], send_time_str[1][0:6])
+
+        sender = str(item["sender"])
+
+        text = str(item["text"]).replace(r"\n", "")
+        extract_text = extract_kiln_data(text=text)
+
+        print(send_time_timestamp, sender, extract_text)
 
     command = (
         input(

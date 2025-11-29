@@ -61,3 +61,12 @@ class Jalali:
 # for date, time in date_list:
 #     t = Jalali()
 #     print(t(date, time))
+
+
+# نسخه استخراج شده از گروه ایتا
+# time = "1404/9/7, 00:52:38"
+# d = time.split(",")
+# print(d) ['1404/9/7', ' 00:52:38']
+# print(d[1][0:6])  '00:52'
+# t = Jalali()
+# print(t(d[0], d[1][0:6]))
