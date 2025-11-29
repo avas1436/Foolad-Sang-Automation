@@ -127,6 +127,7 @@ find_and_select_chat(driver, chat_id)
 t = Jalali()
 # این قسمت تا جایی که رفرش کنیم تمامی اطلاعات را استخراج خواهد کرد
 while True:
+
     chat_data = extract_text_messages_until_timestamp(driver=driver)
 
     for item in chat_data:
@@ -135,14 +136,20 @@ while True:
             continue
 
         send_time_str = str(send_time).split(",")
-        send_time_timestamp = t(send_time_str[0], send_time_str[1][0:6])
+        send_date = send_time_str[0]
+        send_time = send_time_str[1][0:6]
+        send_timestamp = t(send_date, send_time)
 
         sender = str(item["sender"])
 
         text = str(item["text"]).replace(r"\n", "")
         extract_text = extract_kiln_data(text=text)
 
-        print(send_time_timestamp, sender, extract_text)
+        # اگر تمامی مقادیر دیکشنری خالی بود رد شو
+        if all(v in (None, []) for v in extract_text.values()):
+            continue
+
+        print(send_timestamp, sender, extract_text)
 
     command = (
         input(
