@@ -146,5 +146,6 @@ while True:
         break
     else:
         scroling_chat(driver=driver)
+        time.sleep(3)
 
 input("press inter")
