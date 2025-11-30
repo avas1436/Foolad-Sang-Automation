@@ -1,8 +1,6 @@
 import os
 import time
 
-import lxml
-from bs4 import BeautifulSoup
 from click import command
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -14,8 +12,8 @@ from utils.eitta_chat_extractor import (
     scroling_chat,
 )
 from utils.find_chat_selenium_eitta import find_and_select_chat
+from utils.fsgroup_data_cleaner import select_date
 from utils.fsgroup_regex import extract_kiln_data
-from utils.jalali_convertor import Jalali
 
 # پیدا کردن مسیر برنامه یعنی همان جایی که برنامه ایجاد می شود.
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -124,7 +122,7 @@ chat_id = -51577627  # گروه کنترل کیفیت و آزمایشگاه
 
 # استفاده از تابع برای باز کردن صفحه چت گروه فولاد سنگ
 find_and_select_chat(driver, chat_id)
-t = Jalali()
+
 # این قسمت تا جایی که رفرش کنیم تمامی اطلاعات را استخراج خواهد کرد
 while True:
 
