@@ -59,7 +59,7 @@ while login_attempts < max_attempts:
 
     try:
         # صفحه ورود اولیه
-        element = WebDriverWait(driver, 3).until(
+        element = WebDriverWait(driver, 4).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, "h4.text-center.i18n"))
         )
         if "ورود به ایتا" in element.text:
@@ -71,7 +71,7 @@ while login_attempts < max_attempts:
 
     try:
         # صفحه کد تأیید
-        auth_page = WebDriverWait(driver, 3).until(
+        auth_page = WebDriverWait(driver, 4).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, ".page-authCode.active"))
         )
 
@@ -88,7 +88,7 @@ while login_attempts < max_attempts:
 
     try:
         # بررسی ورود موفق
-        WebDriverWait(driver, 3).until(
+        WebDriverWait(driver, 4).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, ".page-chats"))
         )
 
@@ -125,7 +125,7 @@ find_and_select_chat(driver, chat_id)
 while True:
 
     chat_data = extract_text_messages_until_timestamp(driver=driver)
-
+    print(chat_data)
     clean_data = clean_main(data=chat_data)
     print(clean_data)
 

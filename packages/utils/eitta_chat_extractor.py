@@ -45,48 +45,60 @@ def extract_text_messages_until_timestamp(driver):
 
 def scroling_chat(driver):
     try:
-        # More specific selector for the chat messages scrollable area
         scrollable_div = driver.find_element(
             By.CSS_SELECTOR, "div.bubbles.scrolled-down div.scrollable.scrollable-y"
         )
 
-        # Get scroll position after scrolling
-        current_position = driver.execute_script(
-            "return arguments[0].scrollTop", scrollable_div
-        )
-        new_scroll_height = driver.execute_script(
-            "return arguments[0].scrollHeight", scrollable_div
-        )
-        print(f"📍 Scroll position: {current_position}, Height: {new_scroll_height}")
-
-        # Scroll to top (for beginning of chat)
+        # Scroll to top
         driver.execute_script("arguments[0].scrollTop = 0", scrollable_div)
+        time.sleep(2)
 
-        # Get scroll position after scrolling
-        current_position = driver.execute_script(
-            "return arguments[0].scrollTop", scrollable_div
-        )
-        new_scroll_height = driver.execute_script(
+        # Get initial metrics
+        last_height = driver.execute_script(
             "return arguments[0].scrollHeight", scrollable_div
         )
+        current_position = 0
+        consecutive_no_change = 0
 
-        print(f"📍 Scroll position: {current_position}, Height: {new_scroll_height}")
+        while consecutive_no_change < 3:  # Stop after 3 attempts with no change
+            # Scroll down
+            current_position += 800
+            driver.execute_script(
+                f"arguments[0].scrollTop = {current_position}", scrollable_div
+            )
+
+            # Wait for potential content load
+            WebDriverWait(driver, 3).until(
+                lambda d: driver.execute_script(
+                    "return arguments[0].scrollHeight", scrollable_div
+                )
+                > last_height
+            )
+
+            # Get new height
+            new_height = driver.execute_script(
+                "return arguments[0].scrollHeight", scrollable_div
+            )
+            current_position = driver.execute_script(
+                "return arguments[0].scrollTop", scrollable_div
+            )
+
+            print(f"📊 Scroll: Position {current_position}, Height {new_height}")
+
+            # Check if content changed
+            if new_height == last_height:
+                consecutive_no_change += 1
+            else:
+                consecutive_no_change = 0
+                last_height = new_height
+
+            # Check if we're at the bottom
+            if current_position + 1000 >= new_height:
+                print("🎯 Reached apparent bottom")
+                break
 
         return True
 
-    except NoSuchElementException:
-        print("🚫 Scrollable chat element not found")
-        # Try alternative selectors
-        try:
-            scrollable_div = driver.find_element(
-                By.CSS_SELECTOR, "div.scrollable.scrollable-y"
-            )
-            print("📌 Found alternative scrollable element")
-            # Continue with scrolling logic...
-            return True
-        except NoSuchElementException:
-            print("🚫 No scrollable elements found")
-            return False
     except Exception as e:
         print(f"🚫 Scroll error: {str(e)}")
         return False
