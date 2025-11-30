@@ -12,7 +12,7 @@ from utils.eitta_chat_extractor import (
     scroling_chat,
 )
 from utils.find_chat_selenium_eitta import find_and_select_chat
-from utils.fsgroup_data_cleaner import select_date
+from utils.fsgroup_data_cleaner import data_cleaner, get_date, select_data
 from utils.fsgroup_regex import extract_kiln_data
 
 # پیدا کردن مسیر برنامه یعنی همان جایی که برنامه ایجاد می شود.
@@ -115,39 +115,21 @@ else:
 
 # پیدا کردن چت مورد نظر با شناسه -51577627
 # این چت همان گروه کنترل کیفی و آزمایشگاه است
-
-# chat_id = 34936560  # ثابتین
 chat_id = -51577627  # گروه کنترل کیفیت و آزمایشگاه
 
 
 # استفاده از تابع برای باز کردن صفحه چت گروه فولاد سنگ
 find_and_select_chat(driver, chat_id)
 
+
 # این قسمت تا جایی که رفرش کنیم تمامی اطلاعات را استخراج خواهد کرد
 while True:
 
     chat_data = extract_text_messages_until_timestamp(driver=driver)
 
-    for item in chat_data:
-        send_time = item["time"]
-        if send_time == None:
-            continue
-
-        send_time_str = str(send_time).split(",")
-        send_date = send_time_str[0]
-        send_time = send_time_str[1][0:6]
-        send_timestamp = t(send_date, send_time)
-
-        sender = str(item["sender"])
-
-        text = str(item["text"]).replace(r"\n", "")
-        extract_text = extract_kiln_data(text=text)
-
-        # اگر تمامی مقادیر دیکشنری خالی بود رد شو
-        if all(v in (None, []) for v in extract_text.values()):
-            continue
-
-        print(send_timestamp, sender, extract_text)
+    date = get_date()
+    bad_data = select_data(data=chat_data, date=date)
+    clean_data = data_cleaner(data=bad_data, date=date)
 
     command = (
         input(
