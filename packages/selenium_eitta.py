@@ -12,8 +12,7 @@ from utils.eitta_chat_extractor import (
     scroling_chat,
 )
 from utils.find_chat_selenium_eitta import find_and_select_chat
-from utils.fsgroup_data_cleaner import data_cleaner, get_date, select_data
-from utils.fsgroup_regex import extract_kiln_data
+from utils.fsgroup_data_cleaner import clean_main
 
 # پیدا کردن مسیر برنامه یعنی همان جایی که برنامه ایجاد می شود.
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -127,9 +126,8 @@ while True:
 
     chat_data = extract_text_messages_until_timestamp(driver=driver)
 
-    date = get_date()
-    bad_data = select_data(data=chat_data, date=date)
-    clean_data = data_cleaner(data=bad_data, date=date)
+    clean_data = clean_main(data=chat_data)
+    print(clean_data)
 
     command = (
         input(
