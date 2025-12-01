@@ -114,7 +114,7 @@ class ModernWindow(QWidget):
         self.theme = ThemeManager.THEMES[self.current_theme]
 
         # تعیین اندازه اولیه پنجره
-        self.resize(1200, 800)
+        self.resize(800, 600)
 
         # استایل کلی برنامه
         self.setStyleSheet(
@@ -176,7 +176,7 @@ class ModernWindow(QWidget):
     def _create_title_button(self, text, color):
         """تابع کمکی برای ایجاد دکمه‌های نوار عنوان"""
         btn = QPushButton(text)
-        btn.setFixedSize(36, 36)
+        btn.setFixedSize(25, 25)
         btn.setObjectName("titleButton")
         # استایل دینامیک در apply_theme تنظیم می‌شود
         return btn

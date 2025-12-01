@@ -2,87 +2,99 @@ from decimal import ROUND_HALF_UP, Decimal
 
 from openpyxl import load_workbook
 
-# باز کردن و خواندن اکسل گزارش روزانه در حالت خواندن برای سرعت بیشتر
-try:
-    wb_daily_report = load_workbook(r"daily.xlsx", data_only=True, read_only=True)
-except Exception as e:
-    print(f"There is a problem with excel file: {e}")
-    input("Press any key to exit...")
-    exit(1)
 
-sheets_name: list[str] = wb_daily_report.sheetnames
+def check_daily(file_path: str = None, start_day: int = None, end_day: int = None):
+    # اگر پارامترها داده نشده باشند، مقدار پیش‌فرض بده
+    if file_path is None:
+        file_path = "daily.xlsx"
+    if start_day is None:
+        start_day = 1
+    if end_day is None:
+        end_day = 31
+    # باز کردن و خواندن اکسل گزارش روزانه در حالت خواندن برای سرعت بیشتر
+    try:
+        wb_daily_report = load_workbook(
+            filename=file_path, data_only=True, read_only=True
+        )
+    except Exception as e:
+        print(f"There is a problem with excel file: {e}")
+        input("Press any key to exit...")
+        exit(1)
 
-# یک حلقه که روی تک تک روزهای ماه حرکت کرده و بررسی
-#  می‌کند آیا محاسبات صحیح بوده یا نه
-for day in sheets_name:
+    sheets_name: list[str] = wb_daily_report.sheetnames
 
-    # باز کردن شیت روز های کل ماه
-    ws_daily_report = wb_daily_report[day]
+    # یک حلقه که روی تک تک روزهای ماه حرکت کرده و بررسی
+    #  می‌کند آیا محاسبات صحیح بوده یا نه
+    for day in sheets_name:
 
-    granulation_data_test = [
-        ws_daily_report["F9"].value,  # ذرات زیر ۱۰
-        ws_daily_report["F10"].value,  # ذرات ۰ تا 5
-        ws_daily_report["G10"].value,  # ذرات ۵ تا ۱۰
-        ws_daily_report["H9"].value,  # ذرات ۱۰ تا ۶۰
-        ws_daily_report["K9"].value,  # ذرات بالای ۶۰
-        ws_daily_report["A9"].value,  # تناژ
-        ws_daily_report["B9"].value,  # تعداد کامیون
-    ]
-    # اگر حتی یکی از مقادیر عددی نبود
-    if any(
-        not isinstance(day_test, (int, float)) for day_test in granulation_data_test
-    ):
-        print(f"❌ Data of day {day} is empty - skipping...")
-        continue
+        # باز کردن شیت روز های کل ماه
+        ws_daily_report = wb_daily_report[day]
 
-    # دریافت اطلاعات مربوط به سل های مورد بررسی
-    granulation_data = [
-        Decimal(str(granulation_data_test[0])).quantize(
-            Decimal("0.1"), rounding=ROUND_HALF_UP
-        ),  # ذرات زیر ۱۰
-        Decimal(str(granulation_data_test[1])).quantize(
-            Decimal("0.1"), rounding=ROUND_HALF_UP
-        ),  # ذرات ۰ تا 5
-        Decimal(str(granulation_data_test[2])).quantize(
-            Decimal("0.1"), rounding=ROUND_HALF_UP
-        ),  # ذرات ۵ تا ۱۰
-        Decimal(str(granulation_data_test[3])).quantize(
-            Decimal("0.1"), rounding=ROUND_HALF_UP
-        ),  # ذرات ۱۰ تا ۶۰
-        Decimal(str(granulation_data_test[4])).quantize(
-            Decimal("0.1"), rounding=ROUND_HALF_UP
-        ),  # ذرات بالای ۶۰
-        Decimal(str(granulation_data_test[5])).quantize(
-            Decimal("0.1"), rounding=ROUND_HALF_UP
-        ),  # تناژ
-        Decimal(str(granulation_data_test[6])).quantize(
-            Decimal("0.1"), rounding=ROUND_HALF_UP
-        ),  # تعداد کامیون
-    ]
+        granulation_data_test = [
+            ws_daily_report["F9"].value,  # ذرات زیر ۱۰
+            ws_daily_report["F10"].value,  # ذرات ۰ تا 5
+            ws_daily_report["G10"].value,  # ذرات ۵ تا ۱۰
+            ws_daily_report["H9"].value,  # ذرات ۱۰ تا ۶۰
+            ws_daily_report["K9"].value,  # ذرات بالای ۶۰
+            ws_daily_report["A9"].value,  # تناژ
+            ws_daily_report["B9"].value,  # تعداد کامیون
+        ]
+        # اگر حتی یکی از مقادیر عددی نبود
+        if any(
+            not isinstance(day_test, (int, float)) for day_test in granulation_data_test
+        ):
+            print(f"❌ Data of day {day} is empty - skipping...")
+            continue
 
-    # شروط مورد نظر برای بررسی صحت اطلاعات
-    if (granulation_data[1] + granulation_data[2] != granulation_data[0]) or (
-        granulation_data[0] + granulation_data[3] + granulation_data[4]
-        != Decimal("100.000")
-    ):
-        print(f"⚠️  Day {day}: Granulation calculation error")
-    if granulation_data[1] + granulation_data[2] != granulation_data[0]:
-        print(f"   Sum of 0-5 ({granulation_data[1]}) and 5-10 ({granulation_data[2]})")
-        print(f"   does not equal below 10 ({granulation_data[0]})")
-        print("   ─────────────────────────")
-    if granulation_data[0] + granulation_data[3] + granulation_data[4] != Decimal(
-        "100.000"
-    ):
-        print(f"   Below 10: {granulation_data[0]}")
-        print(f"   10-60:    {granulation_data[3]}")
-        print(f"   Above 60: {granulation_data[4]}")
-        print(f"   does not equal 100%")
-        print("   ─────────────────────────")
-    if granulation_data[6] and granulation_data[6] != 0:
-        avg_tonnage = granulation_data[5] / granulation_data[6]
-        if avg_tonnage < Decimal("24.2") or avg_tonnage > Decimal("26.8"):
-            print(f"⚠️  Day {day}: Tonnage or number of truck is not correct!")
+        # دریافت اطلاعات مربوط به سل های مورد بررسی
+        granulation_data = [
+            Decimal(str(granulation_data_test[0])).quantize(
+                Decimal("0.1"), rounding=ROUND_HALF_UP
+            ),  # ذرات زیر ۱۰
+            Decimal(str(granulation_data_test[1])).quantize(
+                Decimal("0.1"), rounding=ROUND_HALF_UP
+            ),  # ذرات ۰ تا 5
+            Decimal(str(granulation_data_test[2])).quantize(
+                Decimal("0.1"), rounding=ROUND_HALF_UP
+            ),  # ذرات ۵ تا ۱۰
+            Decimal(str(granulation_data_test[3])).quantize(
+                Decimal("0.1"), rounding=ROUND_HALF_UP
+            ),  # ذرات ۱۰ تا ۶۰
+            Decimal(str(granulation_data_test[4])).quantize(
+                Decimal("0.1"), rounding=ROUND_HALF_UP
+            ),  # ذرات بالای ۶۰
+            Decimal(str(granulation_data_test[5])).quantize(
+                Decimal("0.1"), rounding=ROUND_HALF_UP
+            ),  # تناژ
+            Decimal(str(granulation_data_test[6])).quantize(
+                Decimal("0.1"), rounding=ROUND_HALF_UP
+            ),  # تعداد کامیون
+        ]
+
+        # شروط مورد نظر برای بررسی صحت اطلاعات
+        if (granulation_data[1] + granulation_data[2] != granulation_data[0]) or (
+            granulation_data[0] + granulation_data[3] + granulation_data[4]
+            != Decimal("100.000")
+        ):
+            print(f"⚠️  Day {day}: Granulation calculation error")
+        if granulation_data[1] + granulation_data[2] != granulation_data[0]:
+            print(
+                f"   Sum of 0-5 ({granulation_data[1]}) and 5-10 ({granulation_data[2]})"
+            )
+            print(f"   does not equal below 10 ({granulation_data[0]})")
             print("   ─────────────────────────")
+        if granulation_data[0] + granulation_data[3] + granulation_data[4] != Decimal(
+            "100.000"
+        ):
+            print(f"   Below 10: {granulation_data[0]}")
+            print(f"   10-60:    {granulation_data[3]}")
+            print(f"   Above 60: {granulation_data[4]}")
+            print(f"   does not equal 100%")
+            print("   ─────────────────────────")
+        if granulation_data[6] and granulation_data[6] != 0:
+            avg_tonnage = granulation_data[5] / granulation_data[6]
+            if avg_tonnage < Decimal("24.2") or avg_tonnage > Decimal("26.8"):
+                print(f"⚠️  Day {day}: Tonnage or number of truck is not correct!")
+                print("   ─────────────────────────")
 
-
-wb_daily_report.close()
+    wb_daily_report.close()
