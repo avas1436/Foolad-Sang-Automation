@@ -1,16 +1,25 @@
 from decimal import ROUND_HALF_UP, Decimal
 
+import click
 from openpyxl import load_workbook
 
 
-def check_daily(file_path: str = None, start_day: int = None, end_day: int = None):
+@click.command()
+@click.option(
+    '--start_day', prompt='Enter start day', default=1, type=int, show_default=True
+)
+@click.option(
+    '--end_day', prompt='Enter end day', default=31, type=int, show_default=True
+)
+@click.option(
+    '--file_path', prompt='Enter file path', default='daily.xlsx', show_default=True
+)
+def check_daily(file_path: str, start_day: int, end_day: int):
     # اگر پارامترها داده نشده باشند، مقدار پیش‌فرض بده
-    if file_path is None:
-        file_path = "daily.xlsx"
-    if start_day is None:
-        start_day = 1
-    if end_day is None:
-        end_day = 31
+    if start_day < 0:
+        start_day = 0
+    if end_day > 30:
+        end_day = 30
     # باز کردن و خواندن اکسل گزارش روزانه در حالت خواندن برای سرعت بیشتر
     try:
         wb_daily_report = load_workbook(
@@ -18,17 +27,16 @@ def check_daily(file_path: str = None, start_day: int = None, end_day: int = Non
         )
     except Exception as e:
         print(f"There is a problem with excel file: {e}")
-        input("Press any key to exit...")
-        exit(1)
-
+        input("Press Enter to continue...")
+        return
     sheets_name: list[str] = wb_daily_report.sheetnames
 
     # یک حلقه که روی تک تک روزهای ماه حرکت کرده و بررسی
     #  می‌کند آیا محاسبات صحیح بوده یا نه
-    for day in sheets_name:
+    for day in range(start_day + 1, end_day + 1):
 
         # باز کردن شیت روز های کل ماه
-        ws_daily_report = wb_daily_report[day]
+        ws_daily_report = wb_daily_report[sheets_name[day]]
 
         granulation_data_test = [
             ws_daily_report["F9"].value,  # ذرات زیر ۱۰
@@ -98,3 +106,8 @@ def check_daily(file_path: str = None, start_day: int = None, end_day: int = Non
                 print("   ─────────────────────────")
 
     wb_daily_report.close()
+
+
+# اجرای کاملا ساده با کلیک که تقریبا همه ارور هندلینگ ها را خودش انجام میده
+# if __name__ == '__main__':
+#     check_daily()
