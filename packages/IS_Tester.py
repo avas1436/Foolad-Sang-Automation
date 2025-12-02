@@ -109,5 +109,5 @@ def check_daily(file_path: str, start_day: int, end_day: int):
 
 
 # اجرای کاملا ساده با کلیک که تقریبا همه ارور هندلینگ ها را خودش انجام میده
-# if __name__ == '__main__':
-#     check_daily()
+if __name__ == '__main__':
+    check_daily()
