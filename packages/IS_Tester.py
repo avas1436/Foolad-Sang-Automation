@@ -23,7 +23,7 @@ def check_daily(file_path: str, start_day: int, end_day: int):
     # باز کردن و خواندن اکسل گزارش روزانه در حالت خواندن برای سرعت بیشتر
     try:
         wb_daily_report = load_workbook(
-            filename=file_path, data_only=True, read_only=True
+            filename=rf"{file_path}", data_only=True, read_only=True
         )
     except Exception as e:
         click.secho(message=f"There is a problem with excel file: {e}", fg="red")
@@ -50,7 +50,7 @@ def check_daily(file_path: str, start_day: int, end_day: int):
         if any(
             not isinstance(day_test, (int, float)) for day_test in granulation_data_test
         ):
-            click.echo(f"❌ Data of day {day} is empty - skipping...")
+            click.echo(f"❌ Data of day {day+1} is empty - skipping...")
             continue
 
         # دریافت اطلاعات مربوط به سل های مورد بررسی
@@ -83,7 +83,7 @@ def check_daily(file_path: str, start_day: int, end_day: int):
             granulation_data[0] + granulation_data[3] + granulation_data[4]
             != Decimal("100.000")
         ):
-            click.echo(message=f"⚠️  Day {day}: Granulation calculation error")
+            click.echo(message=f"⚠️  Day {day+1}: Granulation calculation error")
         if granulation_data[1] + granulation_data[2] != granulation_data[0]:
             click.echo(
                 message=f"   Sum of 0-5 ({granulation_data[1]}) and 5-10 ({granulation_data[2]})"
@@ -102,7 +102,7 @@ def check_daily(file_path: str, start_day: int, end_day: int):
             avg_tonnage = granulation_data[5] / granulation_data[6]
             if avg_tonnage < Decimal("24.2") or avg_tonnage > Decimal("26.8"):
                 click.echo(
-                    message=f"⚠️  Day {day}: Tonnage or number of truck is not correct!"
+                    message=f"⚠️  Day {day+1}: Tonnage or number of truck is not correct!"
                 )
                 click.echo(message="   ─────────────────────────")
 
@@ -110,5 +110,5 @@ def check_daily(file_path: str, start_day: int, end_day: int):
 
 
 # اجرای کاملا ساده با کلیک که تقریبا همه ارور هندلینگ ها را خودش انجام میده
-# if __name__ == '__main__':
-#     check_daily()
+if __name__ == '__main__':
+    check_daily()
