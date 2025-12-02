@@ -1,6 +1,6 @@
-from excel_manager import ExcelManager
 from safe_round import NumberRounder
 
+from packages.utils.excel_manager import ExcelManager
 from packages.utils.jalali_convertor import Jalali
 
 
@@ -78,11 +78,10 @@ def extract_bulk_avg(start_index: int, end_index: int, filename="daily.xlsx"):
 
 
 # how to use
-
 ## extract one day
-if __name__ == "__main__":
-    d = extract_avg(sheetname="27")
-    print(d)
+# if __name__ == "__main__":
+#     d = extract_avg(sheetname="27")
+#     print(d)
 
 
 # extract bulk mode

@@ -32,7 +32,7 @@ def check_daily(file_path: str, start_day: int, end_day: int):
 
     # یک حلقه که روی تک تک روزهای ماه حرکت کرده و بررسی
     #  می‌کند آیا محاسبات صحیح بوده یا نه
-    for day in range(start_day + 1, end_day + 1):
+    for day in range(start_day - 1, end_day - 1):
 
         # باز کردن شیت روز های کل ماه
         ws_daily_report = wb_daily_report[sheets_name[day]]
