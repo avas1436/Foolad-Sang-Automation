@@ -26,9 +26,8 @@ def check_daily(file_path: str, start_day: int, end_day: int):
             filename=file_path, data_only=True, read_only=True
         )
     except Exception as e:
-        print(f"There is a problem with excel file: {e}")
-        input("Press Enter to continue...")
-        return
+        click.secho(message=f"There is a problem with excel file: {e}", fg="red")
+
     sheets_name: list[str] = wb_daily_report.sheetnames
 
     # یک حلقه که روی تک تک روزهای ماه حرکت کرده و بررسی
@@ -51,7 +50,7 @@ def check_daily(file_path: str, start_day: int, end_day: int):
         if any(
             not isinstance(day_test, (int, float)) for day_test in granulation_data_test
         ):
-            print(f"❌ Data of day {day} is empty - skipping...")
+            click.echo(f"❌ Data of day {day} is empty - skipping...")
             continue
 
         # دریافت اطلاعات مربوط به سل های مورد بررسی
@@ -84,30 +83,32 @@ def check_daily(file_path: str, start_day: int, end_day: int):
             granulation_data[0] + granulation_data[3] + granulation_data[4]
             != Decimal("100.000")
         ):
-            print(f"⚠️  Day {day}: Granulation calculation error")
+            click.echo(message=f"⚠️  Day {day}: Granulation calculation error")
         if granulation_data[1] + granulation_data[2] != granulation_data[0]:
-            print(
-                f"   Sum of 0-5 ({granulation_data[1]}) and 5-10 ({granulation_data[2]})"
+            click.echo(
+                message=f"   Sum of 0-5 ({granulation_data[1]}) and 5-10 ({granulation_data[2]})"
             )
-            print(f"   does not equal below 10 ({granulation_data[0]})")
-            print("   ─────────────────────────")
+            click.echo(message=f"   does not equal below 10 ({granulation_data[0]})")
+            click.echo(message="   ─────────────────────────")
         if granulation_data[0] + granulation_data[3] + granulation_data[4] != Decimal(
             "100.000"
         ):
-            print(f"   Below 10: {granulation_data[0]}")
-            print(f"   10-60:    {granulation_data[3]}")
-            print(f"   Above 60: {granulation_data[4]}")
-            print(f"   does not equal 100%")
-            print("   ─────────────────────────")
+            click.echo(message=f"   Below 10: {granulation_data[0]}")
+            click.echo(message=f"   10-60:    {granulation_data[3]}")
+            click.echo(message=f"   Above 60: {granulation_data[4]}")
+            click.echo(message=f"   does not equal 100%")
+            click.echo(message="   ─────────────────────────")
         if granulation_data[6] and granulation_data[6] != 0:
             avg_tonnage = granulation_data[5] / granulation_data[6]
             if avg_tonnage < Decimal("24.2") or avg_tonnage > Decimal("26.8"):
-                print(f"⚠️  Day {day}: Tonnage or number of truck is not correct!")
-                print("   ─────────────────────────")
+                click.echo(
+                    message=f"⚠️  Day {day}: Tonnage or number of truck is not correct!"
+                )
+                click.echo(message="   ─────────────────────────")
 
     wb_daily_report.close()
 
 
 # اجرای کاملا ساده با کلیک که تقریبا همه ارور هندلینگ ها را خودش انجام میده
-if __name__ == '__main__':
-    check_daily()
+# if __name__ == '__main__':
+#     check_daily()
