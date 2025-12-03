@@ -1,0 +1,4451 @@
+{
+    "_": "langPackDifference",
+    "lang_code": "fa",
+    "from_version": 0,
+    "version": 0,
+    "strings": [
+        {
+            "_": "langPackString",
+            "key": "AttachAlbum",
+            "value": "آلبوم"
+        },
+        {
+            "_": "langPackString",
+            "key": "BlockModal.Search.Placeholder",
+            "value": "مسدود کردن کاربر..."
+        },
+        {
+            "_": "langPackString",
+            "key": "WordDelimiterLast",
+            "value": " و "
+        },
+        {
+            "_": "langPackString",
+            "key": "ExceptionModal.Search.Placeholder",
+            "value": "یک مورد استثنا اضافه کن..."
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Menu.Hint",
+            "value": "برای **ویرایش** یا **پاسخ**، این منو را ببندید.\nسپس در کنار یک پیام ضربه بزنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Input.UnpinAll",
+            "value": "پین همه پیام ها را بردارید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Selection.LimitToast",
+            "value": "به حداکثر تعداد انتخاب رسیده است."
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.Search.MessagesFound",
+            "one_value": "%d پیام پیدا شد",
+            "other_value": "%d پیام پیدا شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Search.NoMessagesFound",
+            "value": "هیچ پیامی پیدا نشد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Search.PrivateSearch",
+            "value": "جستجوی خصوصی"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Main.EmptyPlaceholder.Title",
+            "value": "چت های شما در اینجا ظاهر می شود"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Main.EmptyPlaceholder.Subtitle",
+            "value": "شما %s در Eitaa دارید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Main.EmptyPlaceholder.SubtitleNoContacts",
+            "value": "از برنامه Eitaa در دستگاه [Android](https://eitaa.org/android) یا [iOS](https://eitaa.org/dl/ios) خود برای همگام سازی مخاطبین خود استفاده کنید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatMigration.From",
+            "value": "از %s منتقل کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatMigration.To",
+            "value": "به %s منتقل شد"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Contacts.Count",
+            "one_value": "%d مخاطب",
+            "other_value": "%d مخاطب"
+        },
+        {
+            "_": "langPackString",
+            "key": "Deactivated.Title",
+            "value": "تعداد تب های زیاد..."
+        },
+        {
+            "_": "langPackString",
+            "key": "Deactivated.Subtitle",
+            "value": "ایتا تنها از یک تب فعال با برنامه پشتیبانی می کند.\nبرای ادامه استفاده از این تب روی هر نقطه کلیک کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "Message.Context.Selection.Copy",
+            "value": "کپی انتخاب شده ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Message.Context.Selection.Clear",
+            "value": "پاک کردن انتخاب شده ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Message.Context.Selection.Delete",
+            "value": "حذف انتخاب شده ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Message.Context.Selection.Forward",
+            "value": "هدایت انتخاب شده ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Message.Context.Selection.SendNow",
+            "value": "ارسال انتخاب های جدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Error.PreviewSender.CaptionTooLong",
+            "value": "عنوان خیلی طولانی هست."
+        },
+        {
+            "_": "langPackString",
+            "key": "PreviewSender.GroupItems",
+            "value": "آیتم های گروه"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "PreviewSender.SendAlbum",
+            "one_value": "ارسال آلبوم",
+            "other_value": "ارسال %d آلبوم"
+        },
+        {
+            "_": "langPackString",
+            "key": "Presence.YourChat",
+            "value": "با خودت چت کن"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Privacy.Devices",
+            "one_value": "%1$d دستگاه",
+            "other_value": "%1$d دستگاه"
+        },
+        {
+            "_": "langPackString",
+            "key": "Privacy.SensitiveContent",
+            "value": "محتوای حساس"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyModal.Search.Placeholder",
+            "value": "افزودن کاربران..."
+        },
+        {
+            "_": "langPackString",
+            "key": "Permissions.NoExceptions",
+            "value": "بدون استثناء"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Permissions.ExceptionsCount",
+            "one_value": "%d استثنا",
+            "other_value": "%d استثنا"
+        },
+        {
+            "_": "langPackString",
+            "key": "Link.Available",
+            "value": "لینک در دسترس هست"
+        },
+        {
+            "_": "langPackString",
+            "key": "Link.Taken",
+            "value": "لینک قبلا گرفته شده است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Link.Invalid",
+            "value": "لینک نامعتبر است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Search.Chats",
+            "value": "گفتگو ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Search.Global",
+            "value": "جستجوی سراسری"
+        },
+        {
+            "_": "langPackString",
+            "key": "Search.Messages",
+            "value": "پیام ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "StickersTab.SearchPlaceholder",
+            "value": "جستجو استیکر"
+        },
+        {
+            "_": "langPackString",
+            "key": "ForwardedFrom",
+            "value": "هدایت شده از %s"
+        },
+        {
+            "_": "langPackString",
+            "key": "Popup.Avatar.Title",
+            "value": "برای تغییر موقعیت بکشید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Popup.Unpin.AllTitle",
+            "value": "پین همه پیام ها را بردارید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Popup.Unpin.HideTitle",
+            "value": "پنهان کردن پیام های پین شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "Popup.Unpin.HideDescription",
+            "value": "آیا می خواهید نوار پیام پین شده را پنهان کنید؟ تا زمانی که یک پیام جدید پین نشود، پنهان می ماند."
+        },
+        {
+            "_": "langPackString",
+            "key": "Popup.Unpin.Hide",
+            "value": "پنهان کردن"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.InvalidPassword",
+            "value": "رمز عبور نامعتبر است"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.EmailCodeChangeEmail",
+            "value": "تغییر ایمیل"
+        },
+        {
+            "_": "langPackString",
+            "key": "MarkupTooltip.LinkPlaceholder",
+            "value": "آدرس اینترنتی را وارد کنید..."
+        },
+        {
+            "_": "langPackString",
+            "key": "MediaViewer.Context.Download",
+            "value": "دانلود"
+        },
+        {
+            "_": "langPackString",
+            "key": "Saved",
+            "value": "ذخیره"
+        },
+        {
+            "_": "langPackString",
+            "key": "Deleted",
+            "value": "حذف شده"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Notifications.Count",
+            "one_value": "%d اعلان",
+            "other_value": "%d اعلان"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Notifications.Forwarded",
+            "one_value": "هدایت %d پیام",
+            "other_value": "هدایت %d پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "Notifications.New",
+            "value": "اعلان جدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "PushNotification.Action.Mute1d",
+            "value": "هشدارهای پس زمینه را به مدت ۱ روز بی صدا کنید"
+        },
+        {
+            "_": "langPackString",
+            "key": "PushNotification.Action.Settings",
+            "value": "تنظیمات هشدار پس زمینه"
+        },
+        {
+            "_": "langPackString",
+            "key": "PushNotification.Action.Mute1d.Mobile",
+            "value": "بی صدا برای 24 ساعت"
+        },
+        {
+            "_": "langPackString",
+            "key": "PushNotification.Action.Settings.Mobile",
+            "value": "تنظیمات هشدارها"
+        },
+        {
+            "_": "langPackString",
+            "key": "PushNotification.Message.NoPreview",
+            "value": "شما یک پیام جدید دارید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Animations",
+            "value": "انیمیشن"
+        },
+        {
+            "_": "langPackString",
+            "key": "DarkMode",
+            "value": "حالت شب"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterIncludeExcludeInfo",
+            "value": "گفتگوها و انواع گفتگوهایی که در این پوشه نمایش داده خواهند شد را انتخاب کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterNameInputLabel",
+            "value": "نام پوشه"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterMenuDelete",
+            "value": "حذف پوشه"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterHeaderEdit",
+            "value": "ویرایش پوشه"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterAllGroups",
+            "value": "تمامی گروه ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterAllContacts",
+            "value": "تمامی مخاطبین"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterAllNonContacts",
+            "value": "غیر از مخاطبین"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterAllChannels",
+            "value": "تمامی کانال ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterAllBots",
+            "value": "تمامی ربات ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditContact.OriginalName",
+            "value": "نام اصلی"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditProfile.FirstNameLabel",
+            "value": "نام"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditProfile.BioLabel",
+            "value": "بیوگرافی (اختیاری)"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditProfile.Username.Label",
+            "value": "نام کاربری (اختیاری)"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditProfile.Username.Available",
+            "value": "نام کاربری در دسترس است"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditProfile.Username.Taken",
+            "value": "نام کاربری در دسترس نیست"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditProfile.Username.Invalid",
+            "value": "نام کاربری نا معتبر است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Menu.SelectMessages",
+            "value": "انتخاب پیام ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Menu.ClearSelection",
+            "value": "پاک کردن انتخاب"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Input.Attach.PhotoOrVideo",
+            "value": "عکس یا ویدیو"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Input.Attach.Document",
+            "value": "فایل"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.OwnerBadge",
+            "value": "مالک"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Subscribe",
+            "value": "پیوستن"
+        },
+        {
+            "_": "langPackString",
+            "key": "ConnectionStatus.ForceReconnect",
+            "value": "اتصال مجدد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ConnectionStatus.ReconnectIn",
+            "value": "دوباره در %ds، %s وصل شوید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ConnectionStatus.Reconnect",
+            "value": "اتصال مجدد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ConnectionStatus.Reconnecting",
+            "value": "در حال اتصال..."
+        },
+        {
+            "_": "langPackString",
+            "key": "ConnectionStatus.TimedOut",
+            "value": "زمان درخواست تمام شد، %s"
+        },
+        {
+            "_": "langPackString",
+            "key": "ConnectionStatus.Waiting",
+            "value": "در حال اتصال به شبکه..."
+        },
+        {
+            "_": "langPackString",
+            "key": "General.Keyboard",
+            "value": "صفحه کلید"
+        },
+        {
+            "_": "langPackString",
+            "key": "General.Keyboard",
+            "value": "صفحه کلید"
+        },
+        {
+            "_": "langPackString",
+            "key": "General.SendShortcut.Enter",
+            "value": "ارسال با Enter"
+        },
+        {
+            "_": "langPackString",
+            "key": "General.SendShortcut.CtrlEnter",
+            "value": "ارسال توسط %s + Enter"
+        },
+        {
+            "_": "langPackString",
+            "key": "General.SendShortcut.NewLine.ShiftEnter",
+            "value": "خط جدید توسط Shift + Enter"
+        },
+        {
+            "_": "langPackString",
+            "key": "General.SendShortcut.NewLine.Enter",
+            "value": "خط جدید توسط Enter"
+        },
+        {
+            "_": "langPackString",
+            "key": "General.AutoplayMedia",
+            "value": "پخش خودکار رسانه"
+        },
+        {
+            "_": "langPackString",
+            "key": "General.TimeFormat",
+            "value": "فرمت زمان"
+        },
+        {
+            "_": "langPackString",
+            "key": "General.TimeFormat.h12",
+            "value": "12-ساعت"
+        },
+        {
+            "_": "langPackString",
+            "key": "General.TimeFormat.h23",
+            "value": "24-ساعت"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatBackground.UploadWallpaper",
+            "value": "بارگذاری والپیپر"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatBackground.Blur",
+            "value": "تصویر والپیپر آبی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Notifications.Sound",
+            "value": "پخش صدا"
+        },
+        {
+            "_": "langPackString",
+            "key": "Notifications.MessagePreview",
+            "value": "پیش‌نمایش پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewPrivateChat",
+            "value": "پیام جدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewPoll.OptionLabel",
+            "value": "گزینه %d"
+        },
+        {
+            "_": "langPackString",
+            "key": "Checkbox.Enabled",
+            "value": "فعال"
+        },
+        {
+            "_": "langPackString",
+            "key": "Checkbox.Disabled",
+            "value": "غیرفعال"
+        },
+        {
+            "_": "langPackString",
+            "key": "Profile",
+            "value": "پروفایل"
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportBug",
+            "value": "گزارش اشکال"
+        },
+        {
+            "_": "langPackString",
+            "key": "LogOut.Description",
+            "value": "آیا برای خارج شدن مطمئن هستید؟\n\nتوجه داشته باشید که می توانید به طور یکپارچه از ایتا در همه دستگاه های خود به طور همزمان استفاده کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "AccDescrEditing",
+            "value": "ویرایش"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionCreateChannel",
+            "value": "کانال ایجاد شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionCreateGroup",
+            "value": "⁨un1⁩ گروه را ایجاد کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionChangedTitle",
+            "value": "⁨un1⁩ نام گروه را به ⁨un2⁩ تغییر داد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionRemovedPhoto",
+            "value": "⁨un1⁩ عکس گروه را حذف کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionChangedPhoto",
+            "value": "⁨un1⁩ عکس گروه را تغییر داد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionChangedVideo",
+            "value": "⁨un1⁩ ویدیوی گروه را تغییر داد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionAddUser",
+            "value": "⁨un1⁩، ⁨un2⁩ را اضافه کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionAddUserSelf",
+            "value": "⁨un1⁩ به گروه بازگشت"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionAddUserSelfYou",
+            "value": "شما به گروه بازگشتید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionAddUserSelfMega",
+            "value": "⁨un1⁩ به گروه پیوست"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionLeftUser",
+            "value": "⁨un1⁩ گروه را ترک کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionKickUser",
+            "value": "⁨un1⁩، ⁨un2⁩ را حذف کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionInviteUser",
+            "value": "⁨un1⁩ از طریق لینک دعوت به گروه پیوست"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionPinnedNoText",
+            "value": "⁨un1⁩ یک پیام سنجاق کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionMigrateFromGroup",
+            "value": "این گروه به ابرگروه ارتقاء یافت"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionYouScored",
+            "value": "شما امتیاز ⁨%1$s⁩ را کسب کردید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionUserScored",
+            "value": "⁨un1⁩ امتیاز ⁨%1$s⁩ را کسب کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionYouScoredInGame",
+            "value": "شما امتیاز ⁨%1$s⁩ را در ⁨un2⁩ کسب کردید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionUserScoredInGame",
+            "value": "⁨un1⁩ امتیاز ⁨%1$s⁩ را در ⁨un2⁩ کسب کرد"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "AndOther",
+            "one_value": "و ⁨%1$d⁩ نفر دیگر",
+            "other_value": "و ⁨%1$d⁩ نفر دیگر"
+        },
+        {
+            "_": "langPackString",
+            "key": "AttachPhoto",
+            "value": "عکس"
+        },
+        {
+            "_": "langPackString",
+            "key": "AttachVideo",
+            "value": "ویدیو"
+        },
+        {
+            "_": "langPackString",
+            "key": "AttachGif",
+            "value": "گیف"
+        },
+        {
+            "_": "langPackString",
+            "key": "AttachLocation",
+            "value": "موقعیت مکانی"
+        },
+        {
+            "_": "langPackString",
+            "key": "AttachLiveLocation",
+            "value": "موقعیت مکانی لحظه‌ای"
+        },
+        {
+            "_": "langPackString",
+            "key": "AttachContact",
+            "value": "مخاطب"
+        },
+        {
+            "_": "langPackString",
+            "key": "AttachSticker",
+            "value": "استیکر"
+        },
+        {
+            "_": "langPackString",
+            "key": "AttachAudio",
+            "value": "پیام صوتی"
+        },
+        {
+            "_": "langPackString",
+            "key": "AttachRound",
+            "value": "پیام ویدیویی"
+        },
+        {
+            "_": "langPackString",
+            "key": "AttachGame",
+            "value": "بازی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Bot",
+            "value": "ربات"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelMegaJoined",
+            "value": "شما به این گروه پیوستید"
+        },
+        {
+            "_": "langPackString",
+            "key": "EnterChannelName",
+            "value": "نام کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "DescriptionOptionalPlaceholder",
+            "value": "توضیحات (اختیاری)"
+        },
+        {
+            "_": "langPackString",
+            "key": "DescriptionPlaceholder",
+            "value": "توضیحات"
+        },
+        {
+            "_": "langPackString",
+            "key": "DiscussionStarted",
+            "value": "بحث شروع شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Draft",
+            "value": "پیش‌نویس"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterAlwaysShow",
+            "value": "شامل شدن گفتگوها"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterNeverShow",
+            "value": "شامل نشدن گفتگوها"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterInclude",
+            "value": "گفتگوهای شامل شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterExclude",
+            "value": "گفتگوهای شامل نشده"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterChatTypes",
+            "value": "انواع گفتگو"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterChats",
+            "value": "گفتگوها"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterNew",
+            "value": "پوشه جدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Filters",
+            "value": "پوشه‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterRecommended",
+            "value": "پوشه‌های پیشنهاد شده"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "FilterShowMoreChats",
+            "one_value": "نمایش ⁨%1$d⁩ گفتگوی بیشتر",
+            "other_value": "نمایش ⁨%1$d⁩ گفتگوی بیشتر"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "ForwardedMessageCount",
+            "one_value": "پیام هدایت شده",
+            "other_value": "⁨%1$d⁩ پیام هدایت شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "FromYou",
+            "value": "شما"
+        },
+        {
+            "_": "langPackString",
+            "key": "Add",
+            "value": "افزودن"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chats",
+            "one_value": "⁨%1$d⁩ گفتگو",
+            "other_value": "⁨%1$d⁩ گفتگو"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Channels",
+            "one_value": "⁨%1$d⁩ کانال",
+            "other_value": "⁨%1$d⁩ کانال"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Comments",
+            "one_value": "⁨%1$d⁩ دیدگاه",
+            "other_value": "⁨%1$d⁩ دیدگاه"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Groups",
+            "one_value": "⁨%1$d⁩ گروه",
+            "other_value": "⁨%1$d⁩ گروه"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Users",
+            "one_value": "⁨%1$d⁩ کاربر",
+            "other_value": "⁨%1$d⁩ کاربر"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Members",
+            "one_value": "⁨%1$d⁩ عضو",
+            "other_value": "⁨%1$d⁩ عضو"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "messages",
+            "one_value": "⁨%1$d⁩ پیام",
+            "other_value": "⁨%1$d⁩ پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "UsernameHelpLink",
+            "value": "این لینک گفتگویی را با خودتان باز می‌کند:\n⁨%1$s⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewChannel",
+            "value": "کانال جدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewGroup",
+            "value": "گروه جدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Contacts",
+            "value": "مخاطبین"
+        },
+        {
+            "_": "langPackString",
+            "key": "Contacts",
+            "value": "مخاطبین"
+        },
+        {
+            "_": "langPackString",
+            "key": "SavedMessages",
+            "value": "پیام‌های ذخیره شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "SavedMessages",
+            "value": "پیام های ذخیره شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "Settings",
+            "value": "تنظیمات"
+        },
+        {
+            "_": "langPackString",
+            "key": "Settings",
+            "value": "تنظیمات"
+        },
+        {
+            "_": "langPackString",
+            "key": "SettingsHelp",
+            "value": "راهنما"
+        },
+        {
+            "_": "langPackString",
+            "key": "General",
+            "value": "عمومی "
+        },
+        {
+            "_": "langPackString",
+            "key": "TextSize",
+            "value": "اندازه متن پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatBackground",
+            "value": "پس‌زمینه گفتگو"
+        },
+        {
+            "_": "langPackString",
+            "key": "EnableAnimations",
+            "value": "فعال کردن انیمیشن"
+        },
+        {
+            "_": "langPackString",
+            "key": "AutoDownloadMedia",
+            "value": "دانلود خودکار رسانه‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "AutodownloadContacts",
+            "value": "مخاطبین"
+        },
+        {
+            "_": "langPackString",
+            "key": "AutodownloadPrivateChats",
+            "value": "گفتگوهای خصوصی"
+        },
+        {
+            "_": "langPackString",
+            "key": "AutodownloadGroupChats",
+            "value": "گفتگوهای گروهی"
+        },
+        {
+            "_": "langPackString",
+            "key": "AutodownloadChannels",
+            "value": "کانال‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "AutoplayGIF",
+            "value": "گیف‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "AutoplayVideo",
+            "value": "ویدیوها"
+        },
+        {
+            "_": "langPackString",
+            "key": "NotificationsForGroups",
+            "value": "اعلان‌های گروه‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "NotificationsForPrivateChats",
+            "value": "اعلان‌های گفتگوهای خصوصی"
+        },
+        {
+            "_": "langPackString",
+            "key": "NotificationsForChannels",
+            "value": "اعلان‌های کانال‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "NotificationsPrivateChats",
+            "value": "گفتگوهای خصوصی"
+        },
+        {
+            "_": "langPackString",
+            "key": "NotificationsGroups",
+            "value": "گروه‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "NotificationsChannels",
+            "value": "کانال‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "NotificationsOther",
+            "value": "سایر"
+        },
+        {
+            "_": "langPackString",
+            "key": "MarkAsUnread",
+            "value": "علامت زدن به عنوان خوانده نشده"
+        },
+        {
+            "_": "langPackString",
+            "key": "MarkAsRead",
+            "value": "علامت زدن به عنوان خوانده شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "ContactJoined",
+            "value": "مخاطب به ایتا پیوست"
+        },
+        {
+            "_": "langPackString",
+            "key": "Loading",
+            "value": "در حال بارگذاری..."
+        },
+        {
+            "_": "langPackString",
+            "key": "Unblock",
+            "value": "رفع مسدودیت"
+        },
+        {
+            "_": "langPackString",
+            "key": "BlockedUsers",
+            "value": "کاربران مسدود"
+        },
+        {
+            "_": "langPackString",
+            "key": "BlockedUsersInfo",
+            "value": "کاربران مسدود شده نمی‌توانند برای شما پیام ارسال کرده یا شما را به گروه‌ها اضافه کنند. همچنین عکس‌های پروفایل، وضعیت آنلاین بودن و آخرین بازدید شما را نخواهند دید."
+        },
+        {
+            "_": "langPackString",
+            "key": "BlockedEmpty",
+            "value": "خالی"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepVerification",
+            "value": "تأیید دو مرحله‌ای"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepVerificationTitle",
+            "value": "تأیید دو مرحله‌ای"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepVerificationCallTitle",
+            "value": "کد تایید"
+        },
+        {
+            "_": "langPackString",
+            "key": "PinnedMessage",
+            "value": "پیام سنجاق شده"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "PinnedMessagesCount",
+            "one_value": "پیام سنجاق شده",
+            "other_value": "⁨%1$d⁩ پیام سنجاق شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyExceptions",
+            "value": "استثناها"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyLastSeen",
+            "value": "آخرین بازدید و آنلاین بودن"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettings",
+            "value": "حریم خصوصی و امنیت"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyTitle",
+            "value": "حریم خصوصی"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyPhone",
+            "value": "شماره تلفن"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyPhoneTitle",
+            "value": "چه کسی می‌تواند شماره تلفن مرا ببیند؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyPhoneTitle2",
+            "value": "چه کسی می‌تواند مرا از طریق شماره‌ام پیدا کند؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyPhoneInfo",
+            "value": "کاربرانی که شماره شما را در مخاطبین خود ذخیره کرده باشند، آن را در ایتا خواهند دید."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyPhoneInfo3",
+            "value": "کاربرانی که شماره شما را به مخاطبین خود اضافه کنند فقط در صورتی آن را در ایتا می‌بینند که در مخاطبین شما باشند."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyProfilePhoto",
+            "value": "عکس‌های پروفایل"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyProfilePhotoTitle",
+            "value": "چه کسی می‌تواند عکس‌ها و ویدیوهای پروفایل مرا ببیند؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyP2PHeader",
+            "value": "همتا به همتا"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyForwardsTitle",
+            "value": "چه کسی می‌تواند در هنگام هدایت پیام‌های من، لینکی به حساب کاربری من اضافه کند؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "Reminders",
+            "value": "یادآورها"
+        },
+        {
+            "_": "langPackString",
+            "key": "ScheduledMessages",
+            "value": "پیام‌های زمان‌بندی شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "LastSeenTitle",
+            "value": "چه کسی می‌تواند زمان آخرین بازدید شما را ببیند؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "SessionsTitle",
+            "value": "نشست‌های فعال"
+        },
+        {
+            "_": "langPackString",
+            "key": "CurrentSession",
+            "value": "این دستگاه"
+        },
+        {
+            "_": "langPackString",
+            "key": "TerminateAllSessions",
+            "value": "پایان دادن به تمامی نشست‌های دیگر"
+        },
+        {
+            "_": "langPackString",
+            "key": "TerminateSessionText",
+            "value": "آیا از پایان دادن به این نشست اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "OtherSessions",
+            "value": "نشست‌های فعال"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureDeleteSingleMessage",
+            "value": "آیا از حذف این پیام اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureDeleteFewMessages",
+            "value": "آیا از حذف این پیام‌ها اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureDeleteSingleMessageMega",
+            "value": "آیا از حذف این پیام برای همه اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureDeleteFewMessagesMega",
+            "value": "آیا از حذف تمامی این پیام‌ها برای همه اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureDeleteAndExitName",
+            "value": "آیا از حذف و ترک گروه **⁨%1$s⁩** اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureDeleteThisChatSavedMessages",
+            "value": "آیا از حذف **پیام‌های ذخیره شده** اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureDeleteThisChatWithUser",
+            "value": "آیا از حذف گفتگو با **⁨%1$s⁩** اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureSessionTitle",
+            "value": "پایان دادن به نشست"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureSessionsTitle",
+            "value": "پایان دادن به نشست‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureSessions",
+            "value": "آیا از پایان دادن به تمامی نشست‌های دیگر اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "Terminate",
+            "value": "پایان دادن"
+        },
+        {
+            "_": "langPackString",
+            "key": "WhoCanCallMe",
+            "value": "چه کسی می‌تواند با من تماس بگیرد؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "WhoCanAddMe",
+            "value": "چه کسی می‌تواند مرا به گفتگوهای گروهی اضافه کند؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "ArchivedChats",
+            "value": "گفتگوهای بایگانی شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "ArchivedChats",
+            "value": "گفتگو های ذخیره شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "Cancel",
+            "value": "لغو"
+        },
+        {
+            "_": "langPackString",
+            "key": "HistoryCleared",
+            "value": "تاریخچه پاک شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Archive",
+            "value": "بایگانی کردن"
+        },
+        {
+            "_": "langPackString",
+            "key": "Unarchive",
+            "value": "خروج از بایگانی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Delete",
+            "value": "حذف"
+        },
+        {
+            "_": "langPackString",
+            "key": "Reply",
+            "value": "پاسخ"
+        },
+        {
+            "_": "langPackString",
+            "key": "Edit",
+            "value": "ویرایش"
+        },
+        {
+            "_": "langPackString",
+            "key": "Forward",
+            "value": "هدایت"
+        },
+        {
+            "_": "langPackString",
+            "key": "CopyLink",
+            "value": "کپی لینک"
+        },
+        {
+            "_": "langPackString",
+            "key": "Copy",
+            "value": "کپی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Search",
+            "value": "جستجو"
+        },
+        {
+            "_": "langPackString",
+            "key": "Search",
+            "value": "جستجو"
+        },
+        {
+            "_": "langPackString",
+            "key": "LinkCopied",
+            "value": "لینک در حافظه کپی شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "LinkCopiedPrivateInfo",
+            "value": "این لینک فقط برای اعضای این گفتگو کار می‌کند."
+        },
+        {
+            "_": "langPackString",
+            "key": "GroupAddMembers",
+            "value": "افزودن اعضا"
+        },
+        {
+            "_": "langPackString",
+            "key": "SendMessageTo",
+            "value": "افزودن افراد..."
+        },
+        {
+            "_": "langPackString",
+            "key": "JumpToDate",
+            "value": "رفتن به تاریخ"
+        },
+        {
+            "_": "langPackString",
+            "key": "Caption",
+            "value": "عنوان"
+        },
+        {
+            "_": "langPackString",
+            "key": "Message",
+            "value": "پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "Poll",
+            "value": "نظرسنجی"
+        },
+        {
+            "_": "langPackString",
+            "key": "SharedFilesTab2",
+            "value": "فایل‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "SharedMediaTab2",
+            "value": "رسانه"
+        },
+        {
+            "_": "langPackString",
+            "key": "SharedLinksTab2",
+            "value": "لینک‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "SharedMusicTab2",
+            "value": "موسیقی"
+        },
+        {
+            "_": "langPackString",
+            "key": "SharedVoiceTab2",
+            "value": "صدا"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewPoll",
+            "value": "نظرسنجی جدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "PollOptions",
+            "value": "گزینه‌های نظرسنجی"
+        },
+        {
+            "_": "langPackString",
+            "key": "AskAQuestion",
+            "value": "پرسیدن سؤال"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddAnExplanationInfo",
+            "value": "کاربران پس از انتخاب پاسخ نادرست این متن را می‌بینند، برای اهداف آموزشی مناسب است."
+        },
+        {
+            "_": "langPackString",
+            "key": "AccDescrQuizExplanation",
+            "value": "توضیحات"
+        },
+        {
+            "_": "langPackString",
+            "key": "PhoneCopied",
+            "value": "شماره تلفن در حافظه کپی شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "UsernameCopied",
+            "value": "نام کاربری در حافظه کپی شد."
+        },
+        {
+            "_": "langPackString",
+            "key": "BioCopied",
+            "value": "بیوگرافی در حافظه کپی شد."
+        },
+        {
+            "_": "langPackString",
+            "key": "UserBio",
+            "value": "بیوگرافی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Username",
+            "value": "نام کاربری"
+        },
+        {
+            "_": "langPackString",
+            "key": "Phone",
+            "value": "تلفن"
+        },
+        {
+            "_": "langPackString",
+            "key": "Notifications",
+            "value": "اعلان‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureDeleteContact",
+            "value": "آیا از حذف این مخاطب اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureDeleteAndExit",
+            "value": "آیا شما از حذف و ترک گروه اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureDeleteAndExitChannel",
+            "value": "آیا از حذف و ترک کانال اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteContact",
+            "value": "حذف مخاطب"
+        },
+        {
+            "_": "langPackString",
+            "key": "GroupType",
+            "value": "نوع گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelType",
+            "value": "نوع کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "TypePrivate",
+            "value": "خصوصی"
+        },
+        {
+            "_": "langPackString",
+            "key": "TypePublic",
+            "value": "عمومی"
+        },
+        {
+            "_": "langPackString",
+            "key": "TypePrivateGroup",
+            "value": "خصوصی"
+        },
+        {
+            "_": "langPackString",
+            "key": "TypePublicGroup",
+            "value": "عمومی"
+        },
+        {
+            "_": "langPackString",
+            "key": "GroupMembers",
+            "value": "اعضا"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteMega",
+            "value": "حذف گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteMegaMenu",
+            "value": "حذف گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteAndExitButton",
+            "value": "حذف و ترک گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelDelete",
+            "value": "حذف کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelDeleteMenu",
+            "value": "حذف کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelPermissions",
+            "value": "اختیارات"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelPermissionsHeader",
+            "value": "اعضای این گروه چه کارهایی می‌توانند انجام دهند؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelAddException",
+            "value": "افزودن استثنا"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelBlockedUsers",
+            "value": "کاربران حذف شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "NoBlockedUsers",
+            "value": "کاربر حذف شده‌ای موجود نیست"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictions",
+            "value": "اختیارات کاربر"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsDisabled",
+            "value": "این گزینه برای تمامی اعضا در اختیارات گروه غیرفعال است"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsCanDo",
+            "value": "این کاربر چه کارهایی می‌تواند انجام دهد؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsRead",
+            "value": "خواندن پیام‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsSend",
+            "value": "ارسال پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsSendMedia",
+            "value": "ارسال رسانه"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsSendPolls",
+            "value": "ارسال نظرسنجی"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsSendStickers",
+            "value": "ارسال استیکر و گیف"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsEmbedLinks",
+            "value": "قراردادن لینک‌"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsChangeInfo",
+            "value": "تغییر اطلاعات گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsPinMessages",
+            "value": "سنجاق کردن پیام‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsInviteUsers",
+            "value": "افزودن کاربران"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsNoSend",
+            "value": "نمی‌تواند پیام ارسال کند"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsNoSendMedia",
+            "value": "ارسال رسانه در این گروه مجاز نیست"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsNoSendPolls",
+            "value": "بدون نظرسنجی"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsNoSendStickers",
+            "value": "بدون استیکر و گیف"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsNoEmbedLinks",
+            "value": "بدون قراردادن لینک‌"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsNoChangeInfo",
+            "value": "نمی‌تواند اطلاعات را تغییر دهد"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsNoPinMessages",
+            "value": "بدون سنجاق"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsNoInviteUsers",
+            "value": "نمی‌تواند کاربری اضافه کند"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsBlock",
+            "value": "محروم کردن و حذف از گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelPublic",
+            "value": "کانال عمومی"
+        },
+        {
+            "_": "langPackString",
+            "key": "MegaPublic",
+            "value": "گروه عمومی"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelPublicInfo",
+            "value": "کانال‌های عمومی در نتایج جستجو پیدا می‌شوند و هر کسی می‌تواند به آن‌ها بپیوندد."
+        },
+        {
+            "_": "langPackString",
+            "key": "MegaPublicInfo",
+            "value": "گروه‌های عمومی در نتایج جستجو پیدا می‌شوند، تاریخچه گفتگو برای همه قابل دسترسی است و هر کسی می‌تواند به این گروه‌ها بپیوندد."
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelPrivate",
+            "value": "کانال خصوصی"
+        },
+        {
+            "_": "langPackString",
+            "key": "MegaPrivate",
+            "value": "گروه خصوصی"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelPrivateInfo",
+            "value": "تنها از طریق لینک دعوت می‌توان به کانال‌های خصوصی پیوست."
+        },
+        {
+            "_": "langPackString",
+            "key": "MegaPrivateInfo",
+            "value": "تنها با دعوت شدن یا داشتن لینک دعوت می‌توان به گروه‌های خصوصی پیوست."
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelPrivateLinkHelp",
+            "value": "افراد می‌توانند با دنبال کردن این لینک به کانال شما بپیوندند. شما می‌توانید لینک را در هر زمانی باطل کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "MegaPrivateLinkHelp",
+            "value": "افراد می‌توانند با دنبال کردن این لینک به گروه شما بپیوندند. شما می‌توانید لینک را در هر زمانی باطل کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "RevokeButton",
+            "value": "باطل کردن"
+        },
+        {
+            "_": "langPackString",
+            "key": "RevokeLink",
+            "value": "باطل کردن لینک"
+        },
+        {
+            "_": "langPackString",
+            "key": "RevokeAlert",
+            "value": "آیا از باطل کردن این لینک اطمینان دارید؟ با این کار، هیچ‌کس قادر نخواهد بود با استفاده از آن بپیوندد."
+        },
+        {
+            "_": "langPackString",
+            "key": "SetUrlPlaceholder",
+            "value": "لینک"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Subscribers",
+            "one_value": "⁨%1$d⁩ مشترک",
+            "other_value": "⁨%1$d⁩ مشترک"
+        },
+        {
+            "_": "langPackString",
+            "key": "SearchGifsTitle",
+            "value": "جستجوی گیف‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "PinMessageAlert",
+            "value": "این پیام در گروه سنجاق شود؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "PinMessageAlertTitle",
+            "value": "سنجاق کردن پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "PinMessageAlertChannel",
+            "value": "آیا می‌خواهید این پیام را در این کانال سنجاق کنید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "PinMessageAlertChat",
+            "value": "آیا می‌خواهید این پیام را در بالای گفتگو سنجاق کنید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "UnpinMessageAlertTitle",
+            "value": "برداشتن سنجاق پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "UnpinMessageAlert",
+            "value": "سنجاق این پیام برداشته شود؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "PinNotify",
+            "value": "به تمامی اعضا اطلاع داده شود"
+        },
+        {
+            "_": "langPackString",
+            "key": "PinMessage",
+            "value": "سنجاق کردن"
+        },
+        {
+            "_": "langPackString",
+            "key": "UnpinMessage",
+            "value": "برداشتن سنجاق"
+        },
+        {
+            "_": "langPackString",
+            "key": "PinAlsoFor",
+            "value": "برای ⁨%1$s⁩ نیز سنجاق شود"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteMessagesTitle",
+            "value": "حذف ⁨%1$s⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteSingleMessagesTitle",
+            "value": "حذف پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteMessagesOption",
+            "value": "لغو ارسال پیام‌های من"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteMessagesOptionAlso",
+            "value": "همچنین حذف برای ⁨%1$s⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteForAll",
+            "value": "حذف برای تمامی اعضا"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteMessagesTextGroup",
+            "value": "شما همچنین می‌توانید با علامت زدن «لغو ارسال پیام‌های من»، ⁨%1$s⁩ که از صندوق پیام‌های سایر اعضای گروه ارسال کردید را حذف کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "LeaveChannel",
+            "value": "ترک کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "LeaveChannelMenu",
+            "value": "ترک کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelLeaveAlertWithName",
+            "value": "آیا از ترک **⁨%1$s⁩** اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "LeaveMegaMenu",
+            "value": "ترک گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteChatUser",
+            "value": "حذف گفتگو"
+        },
+        {
+            "_": "langPackString",
+            "key": "PleaseEnterCurrentPassword",
+            "value": "گذرواژه خود را وارد کنید"
+        },
+        {
+            "_": "langPackString",
+            "key": "PleaseEnterFirstPassword",
+            "value": "یک گذرواژه وارد کنید"
+        },
+        {
+            "_": "langPackString",
+            "key": "PleaseReEnterPassword",
+            "value": "گذرواژه‌ خود را دوباره وارد کنید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Continue",
+            "value": "ادامه"
+        },
+        {
+            "_": "langPackString",
+            "key": "YourEmailSkip",
+            "value": "نادیده گرفتن"
+        },
+        {
+            "_": "langPackString",
+            "key": "YourEmailSkipWarning",
+            "value": "هشدار"
+        },
+        {
+            "_": "langPackString",
+            "key": "YourEmailSkipWarningText",
+            "value": "توجه داشته باشید،\n\nدر صورت فراموش کردن گذرواژه، شما دسترسی به حساب کاربری ایتا خود را از دست خواهید داد. هیچ راهی برای بازگرداندن حساب کاربری شما وجود نخواهد داشت."
+        },
+        {
+            "_": "langPackString",
+            "key": "TurnPasswordOffQuestionTitle",
+            "value": "غیرفعال کردن گذرواژه"
+        },
+        {
+            "_": "langPackString",
+            "key": "TurnPasswordOffQuestion",
+            "value": "آیا از غیرفعال کردن گذرواژه خود اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "Disable",
+            "value": "غیرفعال کردن"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepVerificationSetPassword",
+            "value": "تنظیم گذرواژه"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepVerificationPasswordSet",
+            "value": "گذرواژه تنظیم شد!"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepVerificationPasswordSetInfo",
+            "value": "این گذرواژه‌ هنگام ورود به حساب کاربری در یک دستگاه جدید، علاوه بر کدی که از طریق پیامک دریافت می‌کنید از شما پرسیده شود."
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepVerificationPasswordReturnSettings",
+            "value": "بازگشت به تنظیمات"
+        },
+        {
+            "_": "langPackString",
+            "key": "RecoveryEmail",
+            "value": "ایمیل بازیابی"
+        },
+        {
+            "_": "langPackString",
+            "key": "RecoveryEmailTitle",
+            "value": "ایمیل بازیابی "
+        },
+        {
+            "_": "langPackString",
+            "key": "ResendCode",
+            "value": "ارسال مجدد کد"
+        },
+        {
+            "_": "langPackString",
+            "key": "PasswordAsHintError",
+            "value": "راهنما باید با گذرواژه شما متفاوت باشد"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddStickersCount",
+            "value": "افزودن ⁨%1$s⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "RemoveStickersCount",
+            "value": "حذف ⁨%1$s⁩"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Stickers",
+            "one_value": "⁨%1$d⁩ استیکر",
+            "other_value": "⁨%1$d⁩ استیکر"
+        },
+        {
+            "_": "langPackString",
+            "key": "HidAccount",
+            "value": "حساب کاربری توسط کاربر پنهان شده است"
+        },
+        {
+            "_": "langPackString",
+            "key": "EitaaFeatures",
+            "value": "قابلیت‌های ایتا"
+        },
+        {
+            "_": "langPackString",
+            "key": "SetColor",
+            "value": "تنظیم رنگ"
+        },
+        {
+            "_": "langPackString",
+            "key": "Open",
+            "value": "باز کردن"
+        },
+        {
+            "_": "langPackString",
+            "key": "OpenUrlTitle",
+            "value": "باز کردن لینک"
+        },
+        {
+            "_": "langPackString",
+            "key": "OpenUrlAlert2",
+            "value": "آیا می‌خواهید ⁨%1$s⁩ را باز کنید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterNoChatsToDisplay",
+            "value": "پوشه خالی است"
+        },
+        {
+            "_": "langPackString",
+            "key": "FilterNoChatsToDisplayInfo",
+            "value": "در حال حاضر هیچ گفتگویی متعلق به این پوشه نیست."
+        },
+        {
+            "_": "langPackString",
+            "key": "SupportStatus",
+            "value": "پشتیبانی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Lately",
+            "value": "آخرین بازدید به تازگی"
+        },
+        {
+            "_": "langPackString",
+            "key": "WithinAWeek",
+            "value": "آخرین بازدید ظرف یک هفته‌ پیش"
+        },
+        {
+            "_": "langPackString",
+            "key": "WithinAMonth",
+            "value": "آخرین بازدید ظرف یک ماه پیش"
+        },
+        {
+            "_": "langPackString",
+            "key": "ALongTimeAgo",
+            "value": "آخرین بازدید خیلی وقت پیش"
+        },
+        {
+            "_": "langPackString",
+            "key": "Online",
+            "value": "آنلاین"
+        },
+        {
+            "_": "langPackString",
+            "key": "MessageScheduleSend",
+            "value": "ارسال همین الان"
+        },
+        {
+            "_": "langPackString",
+            "key": "MessageScheduleEditTime",
+            "value": "زمان‌بندی مجدد"
+        },
+        {
+            "_": "langPackString",
+            "key": "YouLeft",
+            "value": "شما این گروه را ترک کردید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Recent",
+            "value": "اخیراً"
+        },
+        {
+            "_": "langPackString",
+            "key": "Of",
+            "value": "⁨%1$d⁩ از ⁨%2$d⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "NoResult",
+            "value": "بدون نتیجه"
+        },
+        {
+            "_": "langPackString",
+            "key": "Updating",
+            "value": "در حال به‌روزرسانی..."
+        },
+        {
+            "_": "langPackString",
+            "key": "Emoji",
+            "value": "اموجی"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddContactTitle",
+            "value": "افزودن مخاطب"
+        },
+        {
+            "_": "langPackString",
+            "key": "HiddenName",
+            "value": "حساب کاربری حذف شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionGroupCallStarted",
+            "value": "⁨un1⁩ یک گفتگوی ویدیویی را شروع کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionGroupCallStartedByYou",
+            "value": "شما یک گفتگوی ویدیویی را شروع کردید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionGroupCallJustStarted",
+            "value": "گفتگوی ویدیویی شروع شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionGroupCallEnded",
+            "value": "گفتگوی ویدیویی به پایان رسید (⁨%s⁩)"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionGroupCallInvited",
+            "value": "⁨un1⁩، ⁨un2⁩ را به گفتگوی ویدیویی دعوت کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionGroupCallYouInvited",
+            "value": "شما ⁨un2⁩ را به گفتگوی ویدیویی دعوت کردید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionGroupCallInvitedYou",
+            "value": "⁨un1⁩ شما را به گفتگوی ویدیویی دعوت کرد"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Seconds",
+            "one_value": "⁨%1$d⁩ ثانیه",
+            "other_value": "⁨%1$d⁩ ثانیه"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Minutes",
+            "one_value": "⁨%1$d⁩ دقیقه",
+            "other_value": "⁨%1$d⁩ دقیقه"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Hours",
+            "one_value": "⁨%1$d⁩ ساعت",
+            "other_value": "⁨%1$d⁩ ساعت"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Days",
+            "one_value": "⁨%1$d⁩ روز",
+            "other_value": "⁨%1$d⁩ روز"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Weeks",
+            "one_value": "⁨%1$d⁩ هفته",
+            "other_value": "⁨%1$d⁩ هفته"
+        },
+        {
+            "_": "langPackString",
+            "key": "TodayAtFormattedWithToday",
+            "value": "امروز ساعت ⁨%1$s⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "formatDateAtTime",
+            "value": "⁨%1$s⁩ ساعت ⁨%2$s⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "JoinByPeekChannelTitle",
+            "value": "پیوستن به کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "JoinByPeekGroupTitle",
+            "value": "پیوستن به گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "YouWereKicked",
+            "value": "شما حذف شدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ViaBot",
+            "value": "از طریق"
+        },
+        {
+            "_": "langPackString",
+            "key": "InviteExpired",
+            "value": "این لینک دعوت منقضی شده است."
+        },
+        {
+            "_": "langPackString",
+            "key": "NoUsernameFound",
+            "value": "هیچ حساب کاربری ایتا با این نام کاربری وجود ندارد."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyDeleteCloudDrafts",
+            "value": "حذف تمامی پیش‌نویس‌های ابری"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureClearDraftsTitle",
+            "value": "حذف پیش‌نویس‌های ابری"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureClearDrafts",
+            "value": "آیا از حذف تمامی پیش‌نویس‌های ابری اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "BotInfoTitle",
+            "value": "این ربات چه می‌کند؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatYourSelf",
+            "value": "جهت ذخیره به اینجا هدایت کنید"
+        },
+        {
+            "_": "langPackString",
+            "key": "GroupEmptyTitle1",
+            "value": "شما یک **گروه** ایجاد کرده‌اید."
+        },
+        {
+            "_": "langPackString",
+            "key": "GroupEmptyTitle2",
+            "value": "گروه‌ها می‌توانند دارای موارد زیر باشند:"
+        },
+        {
+            "_": "langPackString",
+            "key": "GroupDescription1",
+            "value": "تا سقف 200,000 عضو"
+        },
+        {
+            "_": "langPackString",
+            "key": "GroupDescription2",
+            "value": "تاریخچه گفتگوی دائم"
+        },
+        {
+            "_": "langPackString",
+            "key": "GroupDescription3",
+            "value": "لینک‌های عمومی مانند eitaa.com/title"
+        },
+        {
+            "_": "langPackString",
+            "key": "GroupDescription4",
+            "value": "مدیرانی با اختیارات متفاوت"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatYourSelfDescription1",
+            "value": " برای ذخیره پیام‌ها آن‌ها را به اینجا هدایت کنید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatYourSelfDescription2",
+            "value": "برای ذخیره‌ کردن رسانه‌ها و فایل‌ها آن‌ها را به اینجا ارسال کنید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatYourSelfDescription3",
+            "value": " از هر دستگاهی به این گفتگو دسترسی داشته باشید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatYourSelfDescription4",
+            "value": "برای پیدا کردن سریع‌تر از جستجو استفاده کنید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatYourSelfTitle",
+            "value": "فضای ذخیره‌سازی ابری شما"
+        },
+        {
+            "_": "langPackString",
+            "key": "ActionYouCreateGroup",
+            "value": "شما گروه را ایجاد کردید"
+        },
+        {
+            "_": "langPackString",
+            "key": "NoMessages",
+            "value": "هنوز پیامی در اینجا موجود نیست..."
+        },
+        {
+            "_": "langPackString",
+            "key": "NoScheduledMessages",
+            "value": "هنوز پیام زمان‌بندی شده‌ای در اینجا موجود نیست..."
+        },
+        {
+            "_": "langPackString",
+            "key": "NoMessagesGreetingsDescription",
+            "value": "پیامی ارسال کنید یا بر روی خوش‌آمدگویی زیر بزنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "InviteToGroupError",
+            "value": "متأسفانه به دلیل تنظیمات حریم خصوصی این کاربر، شما نمی‌توانید او را به گروه‌ها اضافه کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "InviteToChannelError",
+            "value": "متأسفانه به دلیل تنظیمات حریم خصوصی این کاربر، شما نمی‌توانید او را به کانال‌ها اضافه کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "AddMembersAlertTitle",
+            "value": "افزودن ⁨%1$s⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddOneMemberAlertTitle",
+            "value": "افزودن عضو"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddMembersAlertNamesText",
+            "value": "آیا از افزودن ⁨%1$s⁩ و ⁨%2$s⁩ فرد دیگر به **⁨%3$s⁩** اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddMembersAlertCountText",
+            "value": "آیا از افزودن ⁨%1$s⁩ به **⁨%2$s⁩** اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddMembersForwardMessages",
+            "value": "100 پیام اخیر برای اعضای جدید نمایش داده شوند"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddOneMemberForwardMessages",
+            "value": "100 پیام اخیر برای **⁨%1$s⁩** نمایش داده شوند"
+        },
+        {
+            "_": "langPackString",
+            "key": "PinToTopLimitReached2",
+            "value": "متأسفانه شما فقط می‌توانید ⁨%1$s⁩ را در فهرست اصلی خود سنجاق کنید. در پوشه‌های گفتگو و پوشه بایگانی شما امکان سنجاق کردن گفتگوهای بیشتری وجود دارد."
+        },
+        {
+            "_": "langPackString",
+            "key": "FiltersSetupPinAlert",
+            "value": "تنظیم پوشه‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "AppName",
+            "value": "ایتا"
+        },
+        {
+            "_": "langPackString",
+            "key": "OK",
+            "value": "تأیید"
+        },
+        {
+            "_": "langPackString",
+            "key": "PinFolderLimitReached",
+            "value": "متأسفانه شما نمی‌توانید گفتگوی دیگری را به بالای صفحه سنجاق کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "Send",
+            "value": "ارسال"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelJoin",
+            "value": "پیوستن"
+        },
+        {
+            "_": "langPackString",
+            "key": "Yesterday",
+            "value": "دیروز"
+        },
+        {
+            "_": "langPackString",
+            "key": "LeaveAComment",
+            "value": "دیدگاهی بگذارید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ViewInChat",
+            "value": "مشاهده در گفتگو"
+        },
+        {
+            "_": "langPackString",
+            "key": "LinkNotFound",
+            "value": "متأسفانه شما نمی‌توانید به این پیام دسترسی پیدا کنید. شما عضو گفتگویی که این پیام در آن ارسال شده است، نیستید."
+        },
+        {
+            "_": "langPackString",
+            "key": "Create",
+            "value": "ایجاد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ViewDiscussion",
+            "value": "مشاهده بحث"
+        },
+        {
+            "_": "langPackString",
+            "key": "MessageScheduledUntilOnline",
+            "value": "زمان‌بندی شده تا زمان آنلاین شدن"
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportChat",
+            "value": "گزارش"
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportChatSpam",
+            "value": "هرزنامه"
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportChatViolence",
+            "value": "خشونت"
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportChatPornography",
+            "value": "پورنوگرافی"
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportChatChild",
+            "value": "کودک آزاری"
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportChatOther",
+            "value": "سایر"
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportChatDescription",
+            "value": "توضیحات"
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportInfo",
+            "value": "لطفاً هر گونه جزئیات بیشتری در رابطه با گزارش خود را وارد کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportSentInfo",
+            "value": "گزارش شما توسط همکاران ما در ایتا بررسی خواهد شد.\nبا تشکر از همکاری شما!"
+        },
+        {
+            "_": "langPackString",
+            "key": "ReportHint",
+            "value": "جزئیات بیشتر..."
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatHistory",
+            "value": "تاریخچه گفتگو برای اعضای جدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ShareContact",
+            "value": "به اشتراک گذاشتن مخاطب"
+        },
+        {
+            "_": "langPackString",
+            "key": "SendMessageTitle",
+            "value": "ارسال پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "SendContactToGroupText",
+            "value": "آیا می‌خواهید این مخاطب را برای **⁨%1$s⁩** ارسال کنید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelBroadcast",
+            "value": "اطلاع‌رسانی"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelSilentBroadcast",
+            "value": "اطلاع‌رسانی بی‌صدا"
+        },
+        {
+            "_": "langPackString",
+            "key": "Comment",
+            "value": "دیدگاه"
+        },
+        {
+            "_": "langPackString",
+            "key": "SendAnonymously",
+            "value": "ارسال به صورت ناشناس"
+        },
+        {
+            "_": "langPackString",
+            "key": "DiscardVoiceMessageTitle",
+            "value": "حذف پیام صوتی"
+        },
+        {
+            "_": "langPackString",
+            "key": "DiscardVoiceMessageDescription",
+            "value": "آیا از متوقف کردن ضبط و حذف پیام صوتی خود اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "DiscardVoiceMessageAction",
+            "value": "حذف پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddContact",
+            "value": "افزودن به مخاطبین"
+        },
+        {
+            "_": "langPackString",
+            "key": "BlockUser",
+            "value": "مسدود کردن کاربر"
+        },
+        {
+            "_": "langPackString",
+            "key": "MobileHidden",
+            "value": "شماره تلفن پنهان"
+        },
+        {
+            "_": "langPackString",
+            "key": "MobileHiddenExceptionInfo",
+            "value": "شماره تلفن شما هنگامی که ⁨%1$s⁩ شما را به عنوان مخاطب اضافه کند، قابل مشاهده خواهد بود."
+        },
+        {
+            "_": "langPackString",
+            "key": "FirstName",
+            "value": "نام (الزامی)"
+        },
+        {
+            "_": "langPackString",
+            "key": "LastName",
+            "value": "نام خانوادگی (اختیاری)"
+        },
+        {
+            "_": "langPackString",
+            "key": "AreYouSureBlockContact2",
+            "value": "آیا از مسدود کردن **⁨%1$s⁩** اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserBlocked",
+            "value": "کاربر مسدود شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserUnblocked",
+            "value": "مسدودیت کاربر رفع شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "AudioUnknownArtist",
+            "value": "هنرمند ناشناس"
+        },
+        {
+            "_": "langPackString",
+            "key": "AudioUnknownTitle",
+            "value": "عنوان ناشناس"
+        },
+        {
+            "_": "langPackString",
+            "key": "LogOut",
+            "value": "خروج از حساب کاربری"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "OnlineCount",
+            "one_value": "⁨%1$d⁩ آنلاین",
+            "other_value": "⁨%1$d⁩ آنلاین"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditedMessage",
+            "value": "ویرایش شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "AccountSettings.Filters",
+            "value": "پوشه‌های گفتگو"
+        },
+        {
+            "_": "langPackString",
+            "key": "AccountSettings.Notifications",
+            "value": "اعلان‌ها و صداها"
+        },
+        {
+            "_": "langPackString",
+            "key": "AccountSettings.PrivacyAndSecurity",
+            "value": "حریم خصوصی و امنیت"
+        },
+        {
+            "_": "langPackString",
+            "key": "AccountSettings.Language",
+            "value": "زبان"
+        },
+        {
+            "_": "langPackString",
+            "key": "Alert.UserDoesntExists",
+            "value": "متأسفانه به نظر می‌رسد چنین کاربری وجود ندارد."
+        },
+        {
+            "_": "langPackString",
+            "key": "Alert.Confirm.Discard",
+            "value": "حذف"
+        },
+        {
+            "_": "langPackString",
+            "key": "Appearance.Reset",
+            "value": "بازنشانی به پیش‌فرض"
+        },
+        {
+            "_": "langPackString",
+            "key": "Bio.Description",
+            "value": "هر گونه جزئیاتی مانند سن، شغل یا شهر محل زندگی.\nمثال: طراح 23 ساله از تهران."
+        },
+        {
+            "_": "langPackString",
+            "key": "Contacts.PhoneNumber.NotRegistred",
+            "value": "صاحب این شماره تلفن هنوز در ایتا ثبت نام نکرده است."
+        },
+        {
+            "_": "langPackString",
+            "key": "Channel.UsernameAboutChannel",
+            "value": "افراد می‌توانند این لینک را با دیگران به اشتراک بگذارند و با استفاده از جستجوی ایتا کانال شما را پیدا کنند."
+        },
+        {
+            "_": "langPackString",
+            "key": "Channel.UsernameAboutGroup",
+            "value": "افراد می‌توانند این لینک را با دیگران به اشتراک بگذارند و با استفاده از جستجوی ایتا گروه شما را پیدا کنند."
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.Accessory.Forward",
+            "one_value": "هدایت پیام",
+            "other_value": "هدایت ⁨%d⁩ پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Accessory.Forward.You",
+            "value": "شما"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Accessory.Forward.From",
+            "value": "از طرف"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.Accessory.Hidden",
+            "one_value": "هدایت پیام (نام ارسال کننده پنهان است)",
+            "other_value": "هدایت ⁨%d⁩ پیام (نام ارسال کنندگان پنهان است)"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Alert.Forward.Action.Another",
+            "value": "هدایت به گفتگوی دیگر"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.Alert.Forward.Action.Hide1",
+            "one_value": "پنهان کردن نام ارسال کننده",
+            "other_value": "پنهان کردن نام ارسال کنندگان"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.Alert.Forward.Action.Show1",
+            "one_value": "نمایش نام ارسال کننده",
+            "other_value": "نمایش نام ارسال کنندگان"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.Alert.Forward.Action.ShowCaption",
+            "one_value": "نمایش عنوان",
+            "other_value": "نمایش عنوان‌ها"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.Alert.Forward.Action.HideCaption",
+            "one_value": "پنهان کردن عنوان",
+            "other_value": "پنهان کردن عنوان‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.ChannelBadge",
+            "value": "کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.CopySelectedText",
+            "value": "کپی متن انتخاب شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Confirm.Unpin",
+            "value": "آیا تمایل دارید سنجاق این پیام را بردارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Date.ScheduledFor",
+            "value": "زمان‌بندی شده برای ⁨%@⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Date.ScheduledForToday",
+            "value": "زمان‌بندی شده برای امروز"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.DropTitle",
+            "value": "فایل‌ها را جهت ارسال در اینجا رها کنید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.DropQuickDesc",
+            "value": "به روشی سریع"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.DropAsFilesDesc",
+            "value": "بدون فشرده‌سازی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Edit.Cancel.Text",
+            "value": "آیا از حذف تمامی تغییرات اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Service.PeerJoinedEitaa",
+            "value": "⁨%@⁩ به ایتا پیوست"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Service.Channel.UpdatedTitle",
+            "value": "نام کانال به «⁨%@⁩» تغییر یافت"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Service.Channel.UpdatedPhoto",
+            "value": "عکس کانال به‌روزرسانی شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Service.Channel.RemovedPhoto",
+            "value": "عکس کانال حذف شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Service.Channel.UpdatedVideo",
+            "value": "ویدیوی کانال به‌روزرسانی شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Service.BotPermissionAllowed",
+            "value": "شما به این ربات اجازه دادید تا هرگاه در ⁨%@⁩ وارد حساب کاربری خود شدید، به شما پیام ارسال کند."
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Service.Group.UpdatedPinnedMessage",
+            "value": "⁨%@⁩ «⁨%@⁩» را سنجاق کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Service.VoiceChatFinished",
+            "value": "⁨%1$@⁩ به گفتگوی ویدیویی (⁨%2$@⁩) پایان داد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Service.VoiceChatFinishedYou",
+            "value": "شما به گفتگوی ویدیویی (⁨%@⁩) پایان دادید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.Unvote",
+            "value": "پس گرفتن رأی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.Stop",
+            "value": "متوقف کردن نظرسنجی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.ViewResults",
+            "value": "مشاهده نتایج"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.SubmitVote",
+            "value": "رأی دادن"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.Type.Anonymous",
+            "value": "نظرسنجی ناشناس"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.Type.Public",
+            "value": "نظرسنجی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.Type.AnonymousQuiz",
+            "value": "آزمون ناشناس"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.Type.Quiz",
+            "value": "آزمون"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.Type.Closed",
+            "value": "نتایج نهایی"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.Poll.TotalVotes1",
+            "one_value": "⁨%d⁩ رأی",
+            "other_value": "⁨%d⁩ رأی"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.Quiz.TotalVotes",
+            "one_value": "⁨%d⁩ پاسخ",
+            "other_value": "⁨%d⁩ پاسخ"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.TotalVotesEmpty",
+            "value": "هنوز رأیی داده نشده است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Poll.TotalVotesResultEmpty",
+            "value": "بدون رأی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Quiz.TotalVotesEmpty",
+            "value": "هنوز پاسخی داده نشده است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Quiz.TotalVotesResultEmpty",
+            "value": "بدون پاسخ"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Pinned.DontShow",
+            "value": "پیام‌های سنجاق شده را نمایش نده"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.Title.Comments",
+            "one_value": "⁨%d⁩ دیدگاه",
+            "other_value": "⁨%d⁩ دیدگاه"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatTitle.ReportMessages",
+            "value": "گزارش پیام‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Send.WithoutSound",
+            "value": "ارسال بی‌صدا"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Send.SetReminder",
+            "value": "تنظیم کردن یادآور"
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Send.ScheduledMessage",
+            "value": "زمان‌بندی پیام"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Chat.UnpinAllMessagesConfirmation",
+            "one_value": "آیا می‌خواهید سنجاق پیام را در این گفتگو بردارید؟",
+            "other_value": "آیا می‌خواهید سنجاق تمامی ⁨%d⁩ پیام را در این گفتگو بردارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Context.Mute",
+            "value": "بی‌صدا کردن"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Context.Unmute",
+            "value": "صدادار کردن"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Context.Pin",
+            "value": "سنجاق کردن"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Context.Unpin",
+            "value": "برداشتن سنجاق"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Context.DeleteChat",
+            "value": "حذف گفتگو"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Context.DeleteAndExit",
+            "value": "حذف و ترک"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Context.LeaveChannel",
+            "value": "ترک کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Context.LeaveGroup",
+            "value": "ترک گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Service.Call.incoming",
+            "value": "تماس دریافتی (⁨%@⁩)"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Service.Call.outgoing",
+            "value": "تماس خروجی (⁨%@⁩)"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Service.Call.Cancelled",
+            "value": "تماس لغو شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Service.Call.Missed",
+            "value": "تماس ناموفق"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Service.VoiceChatScheduled",
+            "value": "⁨%1$@⁩ یک گفتگوی ویدیویی را برای ⁨%2$@⁩ زمان‌بندی کرد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Service.VoiceChatScheduledYou",
+            "value": "شما یک گفتگوی ویدیویی را برای ⁨%2$@⁩ زمان‌بندی کردید"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Service.VoiceChatScheduled.Channel",
+            "value": "گفتگوی ویدیویی برای ⁨%@⁩ زمان‌بندی شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Header",
+            "value": "پوشه‌هایی را برای گروه‌های مختلف گفتگوها ایجاد کرده و به سرعت به هر یک از آن‌ها بروید."
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.NewTitle",
+            "value": "ایجاد پوشه"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.List.Title",
+            "value": "پوشه‌های گفتگو"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Include.AddChat",
+            "value": "افزودن گفتگوها"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Exclude.AddChat",
+            "value": "افزودن گفتگوها"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.AllChats",
+            "value": "تمامی گفتگوها"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.AllChats",
+            "value": "همه"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Contacts",
+            "value": "مخاطبین"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.NonContacts",
+            "value": "غیرمخاطبین"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Groups",
+            "value": "گروه‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Channels",
+            "value": "کانال‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Admin",
+            "value": "مدیر"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Bots",
+            "value": "ربات‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.MutedChats",
+            "value": "بی‌صدا"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.ReadChats",
+            "value": "خوانده شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Archive",
+            "value": "بایگانی"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Include.LimitReached",
+            "value": "متأسفانه فقط می‌توانید تا 100 گفتگو را اضافه کنید. لطفاً از انواع گفتگو استفاده کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Exclude.LimitReached",
+            "value": "متأسفانه فقط می‌توانید تا 100 گفتگو را اضافه کنید. لطفاً از انواع گفتگو استفاده کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Confirm.Remove.Header",
+            "value": "حذف پوشه"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Filter.Confirm.Remove.Text",
+            "value": "آیا از حذف این پوشه اطمینان دارید؟ گفتگوهای شما حذف نخواهند شد."
+        },
+        {
+            "_": "langPackString",
+            "key": "Channel.DescriptionHolderDescrpiton",
+            "value": "شما می‌توانید توضیحاتی اختیاری برای کانال خود ارائه کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "CreateGroup.NameHolder",
+            "value": "نام گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "Date.Today",
+            "value": "امروز"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteChat.DeleteGroupForAll",
+            "value": "حذف برای تمامی اعضا"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteChannelForAll",
+            "value": "حذف برای تمامی مشترکین"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAccount.Username",
+            "value": "نام کاربری"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAccount.Title",
+            "value": "ویرایش پروفایل"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAccount.Logout",
+            "value": "خروج از حساب کاربری"
+        },
+        {
+            "_": "langPackString",
+            "key": "Emoji.Recent",
+            "value": "اغلب استفاده شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "Emoji.SmilesAndPeople",
+            "value": "شکلک‌ها و افراد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Emoji.AnimalsAndNature",
+            "value": "حیوانات و طبیعت"
+        },
+        {
+            "_": "langPackString",
+            "key": "Emoji.FoodAndDrink",
+            "value": "غذا و نوشیدنی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Emoji.ActivityAndSport",
+            "value": "فعالیت‌ها و ورزش"
+        },
+        {
+            "_": "langPackString",
+            "key": "Emoji.TravelAndPlaces",
+            "value": "مسافرت و مکان‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Emoji.Objects",
+            "value": "اشیاء"
+        },
+        {
+            "_": "langPackString",
+            "key": "Emoji.Flags",
+            "value": "پرچم‌ها"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "LastSeen.HoursAgo",
+            "one_value": "آخرین بازدید ⁨%d⁩ ساعت پیش",
+            "other_value": "آخرین بازدید ⁨%d⁩ ساعت پیش"
+        },
+        {
+            "_": "langPackString",
+            "key": "Login.Register.LastName.Placeholder",
+            "value": "نام خانوادگی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Modal.Send",
+            "value": "ارسال"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.GeneralSettingsViewController",
+            "value": "تنظیمات عمومی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.InstalledStickerPacksController",
+            "value": "استیکرها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.NotificationSettingsViewController",
+            "value": "اعلان‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.LanguageViewController",
+            "value": "زبان"
+        },
+        {
+            "_": "langPackString",
+            "key": "Stickers.SearchAdd",
+            "value": "افزودن"
+        },
+        {
+            "_": "langPackString",
+            "key": "Stickers.SearchAdded",
+            "value": "اضافه شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Stickers.SuggestStickers",
+            "value": "پیشنهاد استیکر بر اساس اموجی"
+        },
+        {
+            "_": "langPackString",
+            "key": "ShareModal.Search.Placeholder",
+            "value": "به اشتراک گذاشتن با..."
+        },
+        {
+            "_": "langPackString",
+            "key": "ShareModal.Search.ForwardPlaceholder",
+            "value": "هدایت به..."
+        },
+        {
+            "_": "langPackString",
+            "key": "InstalledStickers.LoopAnimated",
+            "value": "تکرار پخش استیکرهای متحرک"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.User.PlayingGame",
+            "value": "در حال بازی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.User.TypingText",
+            "value": "در حال نوشتن"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.User.SendingPhoto",
+            "value": "در حال ارسال عکس"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.User.RecordingVideo",
+            "value": "در حال ضبط ویدیو"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.User.SendingVideo",
+            "value": "در حال ارسال ویدیو"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.User.RecordingAudio",
+            "value": "در حال ضبط صدا"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.User.SendingFile",
+            "value": "در حال ارسال فایل"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.User.ChoosingSticker",
+            "value": "در حال انتخاب استیکر"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.PlayingGame",
+            "value": "⁨%@⁩ در حال بازی است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.TypingText",
+            "value": "⁨%@⁩ در حال نوشتن است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.SendingPhoto",
+            "value": "⁨%@⁩ در حال ارسال عکس است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.RecordingVideo",
+            "value": "⁨%@⁩ در حال ضبط ویدیو است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.SendingVideo",
+            "value": "⁨%@⁩ در حال ارسال ویدیو است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.RecordingAudio",
+            "value": "⁨%@⁩ در حال ضبط صدا است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.SendingFile",
+            "value": "⁨%@⁩ در حال ارسال فایل است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.ChoosingSticker",
+            "value": "⁨%@⁩ در حال انتخاب استیکر است"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.Multi.PlayingGame1",
+            "value": "⁨%@⁩ و ⁨%d⁩ نفر دیگر در حال بازی هستند"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.Multi.TypingText1",
+            "value": "⁨%@⁩ و ⁨%d⁩ نفر دیگر در حال نوشتن هستند"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.Multi.SendingPhoto1",
+            "value": "⁨%@⁩ و ⁨%d⁩ نفر دیگر در حال ارسال عکس هستند"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.Multi.RecordingVideo1",
+            "value": "⁨%@⁩ و ⁨%d⁩ نفر دیگر در حال ضبط ویدیو هستند"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.Multi.SendingVideo1",
+            "value": "⁨%@⁩ و ⁨%d⁩ نفر دیگر در حال ارسال ویدیو هستند"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.Multi.RecordingAudio1",
+            "value": "⁨%@⁩ و ⁨%d⁩ نفر دیگر در حال ضبط صدا هستند"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.Multi.SendingFile1",
+            "value": "⁨%@⁩ و ⁨%d⁩ نفر دیگر در حال ارسال فایل هستند"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Activity.Chat.Multi.ChoosingSticker1",
+            "value": "⁨%@⁩ و ⁨%d⁩ در حال انتخاب استیکر هستند"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.ServiceNotifications",
+            "value": "اعلان‌های سرویس"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.RepliesNotifications",
+            "value": "اعلان‌های پاسخ"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Status.justNow",
+            "value": "آخرین بازدید همین الان"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Status.Today",
+            "value": "امروز"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Status.Yesterday",
+            "value": "دیروز"
+        },
+        {
+            "_": "langPackString",
+            "key": "Peer.Status.LastSeenAt",
+            "value": "آخرین بازدید ⁨%@⁩ در ⁨%@⁩"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Peer.Status.minAgo",
+            "one_value": "آخرین بازدید ⁨%d⁩ دقیقه پیش",
+            "other_value": "آخرین بازدید ⁨%d⁩ دقیقه پیش"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Peer.Status.Member",
+            "one_value": "⁨%d⁩ عضو",
+            "other_value": "⁨%d⁩ عضو"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Peer.Status.Subscribers",
+            "one_value": "⁨%d⁩ مشترک",
+            "other_value": "⁨%d⁩ مشترک"
+        },
+        {
+            "_": "langPackString",
+            "key": "PeerInfo.Administrators",
+            "value": "مدیران"
+        },
+        {
+            "_": "langPackString",
+            "key": "PeerInfo.DeleteChannel",
+            "value": "حذف کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "PeerInfo.Discussion",
+            "value": "بحث"
+        },
+        {
+            "_": "langPackString",
+            "key": "PeerInfo.Discussion.Add",
+            "value": "افزودن"
+        },
+        {
+            "_": "langPackString",
+            "key": "PeerInfo.SignMessages",
+            "value": "امضا کردن پیام‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "PeerInfo.SharedMedia",
+            "value": "رسانه‌های اشتراکی"
+        },
+        {
+            "_": "langPackString",
+            "key": "PeerInfo.Subscribers",
+            "value": "مشترکین"
+        },
+        {
+            "_": "langPackString",
+            "key": "PeerInfo.DeleteContact",
+            "value": "حذف مخاطب"
+        },
+        {
+            "_": "langPackString",
+            "key": "PeerMedia.Members",
+            "value": "اعضا"
+        },
+        {
+            "_": "langPackString",
+            "key": "PollResults.Title.Poll",
+            "value": "نتایج نظرسنجی"
+        },
+        {
+            "_": "langPackString",
+            "key": "PollResults.Title.Quiz",
+            "value": "نتایج آزمون"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "PollResults.LoadMore",
+            "one_value": "نمایش موارد بیشتر (⁨%d⁩)",
+            "other_value": "نمایش موارد بیشتر (⁨%d⁩)"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "Preview.Dragging.AddItems",
+            "one_value": "افزودن مورد",
+            "other_value": "افزودن موارد"
+        },
+        {
+            "_": "langPackString",
+            "key": "PreviewSender.CaptionPlaceholder",
+            "value": "عنوانی اضافه کنید..."
+        },
+        {
+            "_": "langPackString",
+            "key": "PreviewSender.CompressFile",
+            "value": "ارسال به صورت فشرده"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "PreviewSender.SendFile",
+            "one_value": "ارسال فایل",
+            "other_value": "ارسال ⁨%d⁩ فایل"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "PreviewSender.SendPhoto",
+            "one_value": "ارسال عکس",
+            "other_value": "ارسال ⁨%d⁩ عکس"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "PreviewSender.SendVideo",
+            "one_value": "ارسال ویدیو",
+            "other_value": "ارسال ⁨%d⁩ ویدیو"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyAndSecurity.Item.On",
+            "value": "فعال"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyAndSecurity.Item.Off",
+            "value": "غیرفعال"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyAndSecurity.SensitiveText",
+            "value": "غیرفعال کردن فیلترینگ"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacyAndSecurity.SensitiveDesc",
+            "value": "رسانه‌های حساس در کانال‌های عمومی در ایتا تمامی دستگاه‌های شما نمایش داده می‌شود."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettings.VoiceCalls",
+            "value": "تماس‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettings.Forwards",
+            "value": "پیام‌های هدایت شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettings.Groups",
+            "value": "گروه‌ها و کانال‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.AddUsers",
+            "value": "افزودن کاربران"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.GroupDescription",
+            "value": "شما می‌توانید کسانی که قادرند شما را به گروه‌ها و کانال‌ها اضافه کنند را به صورت جداگانه محدود کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.Forwards.CustomHelp",
+            "value": "شما می‌توانید کسانی را که می‌توانند در هنگام هدایت پیام‌های شما لینکی را به حساب کاربری شما اضافه کنند، محدود کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.P2p.Desc",
+            "value": "با غیرفعال کردن همتا به همتا، تمامی تماس‌ها از طریق سرورهای ایتا انتقال خواهند یافت تا از آشکار شدن آدرس IP شما جلوگیری شود، اما ممکن است کیفیت صدا کمی پایین بیاید."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.PhoneCallDescription",
+            "value": "شما می‌توانید کسانی که قادرند با شما تماس بگیرند را به صورت جداگانه محدود کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.ProfilePhoto.CustomHelp",
+            "value": "شما می‌توانید کسانی که قادرند عکس پروفایل شما را ببینند را به صورت جداگانه محدود کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.LastSeenDescription",
+            "value": "توجه: شما قادر به دیدن زمان آخرین بازدید و وضعیت آنلاین بودن افرادی که این تنظیمات خود را با آن‌ها به اشتراک نمی‌گذارید، نیستید. در عوض، زمان آخرین بازدید تقریبی نمایش داده خواهد شد (به تازگی، ظرف یک هفته پیش، ظرف یک ماه پیش)."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.PeerInfo",
+            "value": "شما می‌توانید کاربران را به عنوان استثناهایی اضافه کنید که جایگزین تنظیمات بالا خواهند شد."
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.Everbody",
+            "value": "همه"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.MyContacts",
+            "value": "مخاطبین من"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.Nobody",
+            "value": "هیچ‌کس"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.NeverShare",
+            "value": "هرگز به اشتراک گذاشته نشود با"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.AlwaysShare",
+            "value": "همیشه به اشتراک گذاشته شود با"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.NeverAllow",
+            "value": "هرگز اجازه داده نشود"
+        },
+        {
+            "_": "langPackString",
+            "key": "PrivacySettingsController.AlwaysAllow",
+            "value": "همیشه اجازه داده شود"
+        },
+        {
+            "_": "langPackStringPluralized",
+            "pFlags": [],
+            "flags": 2,
+            "key": "PrivacySettingsController.UserCount",
+            "one_value": "⁨%d⁩ کاربر",
+            "other_value": "⁨%d⁩ کاربر"
+        },
+        {
+            "_": "langPackString",
+            "key": "RecentSessions.Error.FreshReset",
+            "value": "به دلایل امنیتی، شما نمی‌توانید از دستگاهی که به تازگی به آن متصل شده‌اید به نشست‌های قبلی پایان دهید. لطفاً از یک اتصال قدیمی‌تر استفاده کرده یا چند ساعت صبر کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "Message.Context.Select",
+            "value": "انتخاب"
+        },
+        {
+            "_": "langPackString",
+            "key": "Message.Context.Pin",
+            "value": "سنجاق کردن"
+        },
+        {
+            "_": "langPackString",
+            "key": "Message.Context.Unpin",
+            "value": "برداشتن سنجاق"
+        },
+        {
+            "_": "langPackString",
+            "key": "Message.Context.Goto",
+            "value": "نمایش پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "MessageContext.CopyMessageLink1",
+            "value": "کپی لینک پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewPoll.Anonymous",
+            "value": "رأی دادن به صورت ناشناس"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewPoll.Explanation.Placeholder",
+            "value": "افزودن توضیحات (اختیاری)"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewPoll.OptionsAddOption",
+            "value": "افزودن گزینه..."
+        },
+        {
+            "_": "langPackString",
+            "key": "NewPoll.MultipleChoice",
+            "value": "چندگزینه‌ای"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewPoll.Quiz",
+            "value": "حالت آزمون"
+        },
+        {
+            "_": "langPackString",
+            "key": "GeneralSettings.BigEmoji",
+            "value": "اموجی بزرگ"
+        },
+        {
+            "_": "langPackString",
+            "key": "GeneralSettings.EmojiPrediction",
+            "value": "پیشنهاد اموجی"
+        },
+        {
+            "_": "langPackString",
+            "key": "GroupPermission.Delete",
+            "value": "حذف استثنا"
+        },
+        {
+            "_": "langPackString",
+            "key": "ScheduleController.at",
+            "value": "در"
+        },
+        {
+            "_": "langPackString",
+            "key": "Schedule.SendToday",
+            "value": "ارسال امروز ساعت ⁨%@⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "Schedule.SendDate",
+            "value": "ارسال در ⁨%@⁩ ساعت ⁨%@⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "Schedule.SendWhenOnline",
+            "value": "ارسال در هنگام آنلاین شدن"
+        },
+        {
+            "_": "langPackString",
+            "key": "Stickers.Recent",
+            "value": "اخیراً"
+        },
+        {
+            "_": "langPackString",
+            "key": "Text.Context.Copy.Username",
+            "value": "کپی نام کاربری"
+        },
+        {
+            "_": "langPackString",
+            "key": "Text.Context.Copy.Hashtag",
+            "value": "کپی هشتگ"
+        },
+        {
+            "_": "langPackString",
+            "key": "Time.TomorrowAt",
+            "value": "فردا ساعت ⁨%@⁩"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.SetPasswordHelp",
+            "value": "شما می‌توانید گذرواژه‌ای تنظیم کنید تا هنگام ورود به حساب کاربری ایتا در یک دستگاه جدید، علاوه بر کد تأییدی که با پیامک دریافت می‌کنید از شما خواسته شود."
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.CallHelp",
+            "value": "برای راه‌اندازی تایید دو مرحله‌ای، بر روی «برای دریافت کد با من تماس بگیر» کلیک کنید تا کد تایید از طریق تماس صوتی برایتان ارسال شود."
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.CallMe",
+            "value": "برای دریافت کد با من تماس بگیر"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.VerificationCodeHelp",
+            "value": "شما می‌توانید ظرف %  دوباره درخواست تماس‌صوتی کنید. همچنین می‌توانید از همین خط با شماره 02191007746 تماس بگیرید."
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.GenericHelp",
+            "value": "شما تأیید دو مرحله‌ای را فعال کرده‌اید.\nبرای ورود به حساب کاربری ایتا خود به گذرواژه‌ای که در اینجا تنظیم کرده‌اید احتیاج خواهید داشت."
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.ChangePassword",
+            "value": "تغییر گذرواژه"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.RemovePassword",
+            "value": "غیرفعال کردن گذرواژه"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.SetupEmail",
+            "value": "تنظیم ایمیل بازیابی"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.ChangeEmail",
+            "value": "تغییر ایمیل بازیابی"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.ConfirmEmailCodeDesc",
+            "value": "لطفاً کدی که به ایمیل ⁨%@⁩ ارسال کرده‌ایم را وارد کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.RecoveryTitle",
+            "value": "کد ایمیل"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.RecoveryCode",
+            "value": "کد"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.RecoveryCodeInvalid",
+            "value": "کد نامعتبر است. لطفاً دوباره تلاش کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.RecoveryCodeExpired",
+            "value": "کد منقضی شده است"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.SetupHintTitle",
+            "value": "راهنمای گذرواژه"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.SetupHintPlaceholder",
+            "value": "راهنما"
+        },
+        {
+            "_": "langPackString",
+            "key": "TwoStepAuth.ActivateRecoveryEmail",
+            "value": "ایمیل بازیابی شما %  هنوز فعال نشده و در انتظار تایید است."
+        },
+        {
+            "_": "langPackString",
+            "key": "UsernameSettings.ChangeDescription",
+            "value": "شما می‌توانید در ایتا برای خود یک نام کاربری انتخاب کنید. با این کار، افراد می‌توانند بدون نیاز به شماره تلفن شما، با استفاده از این نام کاربری شما را پیدا کرده و با شما ارتباط برقرار کنند.\n\nشما می‌توانید از کاراکترهای 9-0، a-z و زیرخط استفاده کنید. حداقل طول مجاز 6 کاراکتر است."
+        },
+        {
+            "_": "langPackString",
+            "key": "EitaaLive.Live",
+            "value": "پخش زنده"
+        },
+        {
+            "_": "langPackString",
+            "key": "EitaaLive.StreamStateInit",
+            "value": "در حال آماده سازی"
+        },
+        {
+            "_": "langPackString",
+            "key": "EitaaLive.StreamStateBroadcasting",
+            "value": "در حال پخش"
+        },
+        {
+            "_": "langPackString",
+            "key": "EitaaLive.StreamStateArchive",
+            "value": "بایگانی شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "EitaaLive.StreamStateEnded",
+            "value": "پایان یافته"
+        },
+        {
+            "_": "langPackString",
+            "key": "EitaaLive.StreamStateExpired",
+            "value": "سپری شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "EitaaLive.StreamStatePaused",
+            "value": "موقتا متوقف شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "EitaaLive.StreamStateError",
+            "value": "خطا"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Direction",
+            "value": "راست چین"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Services",
+            "value": "خدمات ایتا"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.NothingInteresting",
+            "value": "اینجا هنوز چیز جالبی نیست..."
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.ForwardNoQuote",
+            "value": "هدایت بدون نقل قول"
+        },
+        {
+            "_": "langPackString",
+            "key": "Message.Context.Selection.ForwardNoQuote",
+            "value": "هدایت بدون نقل قول انتخاب شده ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.SharedTitleTab",
+            "value": "عناوین"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.SharedPrivateTab",
+            "value": "شخصی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.SharedPublicTab",
+            "value": "عمومی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.SharedGlobalTab",
+            "value": "سراسری"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.SubSearchSuper.All",
+            "value": "همه"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.SubSearchSuper.Text",
+            "value": "متن"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.SubSearchSuper.Image",
+            "value": "عکس"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.SubSearchSuper.Video",
+            "value": "فیلم"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.SubSearchSuper.Music",
+            "value": "صوت"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.SubSearchSuper.File",
+            "value": "فایل"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Reload",
+            "value": "بارگذاری مجدد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Input.Device.NotFound",
+            "value": "دستگاه درخواستی پیدا نشد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Input.Device.Microphone.AllowAccess",
+            "value": "لطفا اجازه دسترسی به میکروفون خود را بدهید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Zoom",
+            "value": "بزرگنمایی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Login.SendSMS",
+            "value": "ارسال کد با استفاده از پیامک"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatList.Menu.GoToOldVersion",
+            "value": "رفتن به نسخه قدیمی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Action.MigrateToSuperGroup",
+            "value": "ارتقاء به ابرگروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.ErrorMigrateToSuperGroup",
+            "value": "خطایی رخ داد در ارتقاء به ابرگروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Contact.Cancel",
+            "value": "لغو"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Contact.Sync",
+            "value": "همگام سازی مخاطبین"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Contact.Sync.Success",
+            "value": "عملیات با موفقیت انجام شد"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Contact.GroupDelete.Title",
+            "value": "حذف گروهی مخاطبین"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Contact.GroupDelete.Description",
+            "value": "آیا از حذف گروهی مخاطبین انتخاب شده اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Contact.GroupDelete.Delete",
+            "value": "حذف همه"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.Contact.GroupDelete.Required",
+            "value": "لطفا حداقل یک مخاطب را انتخاب کنید برای حذف به صورت گروهی"
+        },
+        {
+            "_": "langPackString",
+            "key": "Video.Unsupported.Desktop",
+            "value": "متاسفانه امکان پخش این ویدیو در وب ایتا وجود ندارد. آن را در نسخه دسکتاپ ما امتحان کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "Video.Unsupported.Mobile",
+            "value": "متاسفانه امکان پخش این ویدیو در وب ایتا وجود ندارد. آن را در نسخه موبایل ما امتحان کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.EditProfile.Photo.Title",
+            "value": "حذف عکس پروفایل"
+        },
+        {
+            "_": "langPackString",
+            "key": "Eitaa.EditProfile.Photo.Description",
+            "value": "آیا از حذف این عکس پروفایل اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "UploadProfile",
+            "value": "پروفایل جدید شما با موفقیت بارگذاری شد. برای مشاهده تغییرات صبوری کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "deleteProfile",
+            "value": "پروفایل شما با موفقیت حذف شد. برای مشاهده تغییرات صبوری کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "ChatAdmin",
+            "value": "مدیر"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelAddSubscribers",
+            "value": "افزودن مشترکین"
+        },
+        {
+            "_": "langPackString",
+            "key": "InviteToChannelSuccessfully",
+            "value": "کاربران انتخاب شده با موفقیت به کانال اضافه شدند. لطفا برای مشاهده تغییرات صبور باشید."
+        },
+        {
+            "_": "langPackString",
+            "key": "InviteToChannelFailed",
+            "value": "متاسفانه درخواست شما برای اضافه‌کردن اعضای جدید ناموفق بود."
+        },
+        {
+            "_": "langPackString",
+            "key": "SearchPlaceholder",
+            "value": "جستجو..."
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelBlacklist",
+            "value": "کاربران حذف‌شده"
+        },
+        {
+            "_": "langPackString",
+            "key": "NoBlockedGroup2",
+            "value": "کاربرانی که توسط مدیران از گروه حذف شوند، نمی‌توانند از طریق لینک‌های دعوت مجددا به آن بپیوندند."
+        },
+        {
+            "_": "langPackString",
+            "key": "NoBlockedChannel2",
+            "value": "کاربرانی که توسط مدیران از کانال حذف شوند، نمی‌توانند از طریق لینک‌های دعوت مجددا به آن بپیوندند."
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRemovedBy",
+            "value": "حذف‌شده توسط  %1$s"
+        },
+        {
+            "_": "langPackString",
+            "key": "SendMessage",
+            "value": "ارسال پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddToGroup",
+            "value": "اضافه‌کردن به گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "AddToChannel",
+            "value": "اضافه‌کردن به کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "SetAsAdmin",
+            "value": "ارتقا به مدیر"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminRights",
+            "value": "ویرایش اختیارات مدیر"
+        },
+        {
+            "_": "langPackString",
+            "key": "KickFromSupergroup",
+            "value": "تغییر اختیارات"
+        },
+        {
+            "_": "langPackString",
+            "key": "KickFromGroup",
+            "value": "حذف از گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminPromotedBy",
+            "value": "ارتقا یافته توسط  %1$s"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdmin",
+            "value": "اختیارات مدیر"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminWhatCanDo",
+            "value": "این مدیر چه کارهایی را می‌تواند انجام دهد؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminChangeChannelInfo",
+            "value": "تغییر اطلاعات کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminChangeGroupInfo",
+            "value": "تغییر اطلاعات گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminPostMessages",
+            "value": "ارسال پیام"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminEditMessages",
+            "value": "ویرایش پیام‌های دیگران"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminDeleteMessages",
+            "value": "حذف‌کردن پیام‌های دیگران"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminGroupDeleteMessages",
+            "value": "حذف پیام‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminAddAdmins",
+            "value": "افزودن مدیران جدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminSendAnonymously",
+            "value": "باقی‌ماندن به صورت ناشناس"
+        },
+        {
+            "_": "langPackString",
+            "key": "StartVoipChatPermission",
+            "value": "مدیریت پخش‌زنده"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminBanUsers",
+            "value": "محروم‌کردن کاربران"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminAddUsersViaLink",
+            "value": "افزودن کاربران با استفاده از لینک"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminPinMessages",
+            "value": "سنجاق‌کردن پیام‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminCantEdit",
+            "value": "شما نمی‌توانید اختیارات این مدیر را ویرایش کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "EditCantEditPermissions",
+            "value": "شما نمی‌توانید این دسترسی را ویرایش کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminRank",
+            "value": "عنوان سفارشی"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminRankInfo",
+            "value": "یک عنوان که کاربران به جای '%1$s' خواهند دید."
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteBanUser",
+            "value": "محروم‌کردن کاربر"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteReportSpam",
+            "value": "گزارش هرزنامه"
+        },
+        {
+            "_": "langPackString",
+            "key": "DeleteAllFrom",
+            "value": "Delete all from %1$s"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelHideMembers",
+            "value": "پنهان‌کردن اعضا"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelHideMembersInfo",
+            "value": "برای پنهان کردن لیست اعضای این گروه، آن را روشن کنید. مدیران همچنان قابل مشاهده خواهند بود."
+        },
+        {
+            "_": "langPackString",
+            "key": "Channel.EditAdmin.PermissionInviteSubscribers",
+            "value": "افزودن یا حذف کاربران"
+        },
+        {
+            "_": "langPackString",
+            "key": "Channel.Admin.Dismiss",
+            "value": "برکناری مدیر"
+        },
+        {
+            "_": "langPackString",
+            "key": "Channel.Admin.AdminAccess",
+            "value": "این مدیر می‌تواند مدیران جدیدی با اختیارات برابر یا کمتر اضافه کند."
+        },
+        {
+            "_": "langPackString",
+            "key": "Channel.Admin.AdminRestricted",
+            "value": "این مدیر نمی تواند مدیران جدید اضافه کند."
+        },
+        {
+            "_": "langPackString",
+            "key": "EditCantEditPermissionsPublic",
+            "value": "این دسترسی در گروه‌های عمومی موجود نیست."
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsBy",
+            "value": "محدودشده توسط %1$s"
+        },
+        {
+            "_": "langPackString",
+            "key": "Permissions.RemoveFromGroup",
+            "value": "آیا اطمینان‌دارید که می‌خواهید **%s** را از گروه حذف کنید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "Remove",
+            "value": "حذف"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelBlockUser",
+            "value": "حذف‌کردن کاربر"
+        },
+        {
+            "_": "langPackString",
+            "key": "ChannelCreator",
+            "value": "سازنده"
+        },
+        {
+            "_": "langPackString",
+            "key": "SuccessfullRemoveUser",
+            "value": "کاربر انتخاب‌شده با موفقیت حذف‌شده است. برای مشاهده تغییرات صبوری کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "KickFromChannel",
+            "value": "حذف از کانال"
+        },
+        {
+            "_": "langPackString",
+            "key": "EditAdminPostLive",
+            "value": "ارسال پخش زنده"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsSendForwarded",
+            "value": "ارسال پیام‌های فورواردی"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsNoSendForwarded",
+            "value": "نمی‌تواند پیام فورواردی ارسال کند"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsViewParticipants",
+            "value": "مشاهده‌ی اعضای گروه"
+        },
+        {
+            "_": "langPackString",
+            "key": "UserRestrictionsNoViewParticipants",
+            "value": "نمی‌تواند اعضای گروه را مشاهده کند"
+        },
+        {
+            "_": "langPackString",
+            "key": "InviteToChannel.Error.MutualContact",
+            "value": "در صورتی که شخصی دیگر عضو کانال شما نباشد، جهت بازگرداندن او، شما باید جزو فهرست مخاطبین ایتای او باشید. \nاو تا زمانی که در فهرست کاربران حذف شده نباشد، می‌تواند همچنان از طریق یک لینک دعوت به کانال بپیوندد."
+        },
+        {
+            "_": "langPackString",
+            "key": "InviteToGroup.Error.MutualContact",
+            "value": "در صورتی که شخصی دیگر عضو 'گروه' شما نباشد، جهت بازگرداندن او، شما باید جزو فهرست مخاطبین ایتای او باشید. \nاو تا زمانی که در فهرست کاربران حذف شده نباشد، می‌تواند همچنان از طریق یک لینک دعوت به 'گروه' بپیوندد."
+        },
+        {
+            "_": "langPackString",
+            "key": "Chat.Selection.AtLeast",
+            "value": "لطفا حداقل یک گفتگو را برای این پوشه انتخاب کنید."
+        },
+        {
+            "_": "langPackString",
+            "key": "ResetFoldersTitle",
+            "value": "بازنشانی تمامی پوشه‌ها"
+        },
+        {
+            "_": "langPackString",
+            "key": "ResetFoldersQuestion",
+            "value": "آیا از بازنشانی تمامی تنظیمات پوشه‌های خود به حالت پیش‌فرض اطمینان دارید؟"
+        },
+        {
+            "_": "langPackString",
+            "key": "Reset",
+            "value": "بازنشانی"
+        },
+        {
+            "_": "langPackString",
+            "key": "CreateFolderHint",
+            "value": "پوشه‌های ایجاد‌شده در نسخه‌ی وب ایتا امکانِ شخصی‌سازیِ کامل را در اختیار شما قرار می‌دهند ولی با نسخه‌های دیگرِ ایتا مانند اندروید و دسکتاپ هم‌گام نیستند."
+        },
+        {
+            "_": "langPackString",
+            "key": "RemoveLocalFoldersHint",
+            "value": "هشدار: پوشه های ایجاد‌شده در وب ایتا در صورت خروج از حساب کاربری حذف می شوند."
+        },
+        {
+            "_": "langPackString",
+            "key": "SaveGif",
+            "value": "ذخیره‌ی گیف"
+        },
+        {
+            "_": "langPackString",
+            "key": "Gif.Saved.Success",
+            "value": "گیف با موفقیت ذخیره شد."
+        },
+        {
+            "_": "langPackString",
+            "key": "LiveEnded",
+            "value": "این پخش‌ زنده به پایان رسید."
+        },
+        {
+            "_": "langPackString",
+            "key": "MyEitaa",
+            "value": "ایتای من"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewRelease",
+            "value": "بروزرسانی جدیدی موجود است!"
+        },
+        {
+            "_": "langPackString",
+            "key": "NewRelease.Title",
+            "value": "بروزرسانی جدید"
+        },
+        {
+            "_": "langPackString",
+            "key": "Update",
+            "value": "بروزرسانی"
+        },
+        {
+          "_": "langPackString",
+          "key": "SavingContentTitle",
+          "value": "ذخیره‌کردن محتوا"
+        },
+        {
+          "_": "langPackString",
+          "key": "RestrictSavingContent",
+          "value": "محدودیت در ذخیره‌سازی محتوا"
+        },
+        {
+          "_": "langPackString",
+          "key": "RestrictSavingContentInfoGroup",
+          "value": "اعضا نمی‌توانند محتوای این گروه را کپی، ذخیره یا فوروارد کنند."
+        },
+        {
+          "_": "langPackString",
+          "key": "RestrictSavingContentInfoChannel",
+          "value": "مشترکین نمی‌توانند محتوای این کانال را کپی، ذخیره یا فوروارد کنند."
+        }
+    ]
+}
