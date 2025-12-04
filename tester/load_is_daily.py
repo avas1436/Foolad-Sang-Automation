@@ -1,7 +1,7 @@
 from decimal import ROUND_HALF_UP, Decimal
 
-import click
 from openpyxl import load_workbook
+from rich import print
 
 
 def load_is_daily(file_path, start_day, end_day):
@@ -17,10 +17,12 @@ def load_is_daily(file_path, start_day, end_day):
             filename=rf"{file_path}", data_only=True, read_only=True
         )
     except Exception as e:
-        click.secho(message=f"There is a problem with excel file: {e}", fg="red")
+        print(
+            f"[bold red] There is a problem with excel file:[/bold red] [yellow]{e}[/yellow]"
+        )
 
     full_sheets_name: list[str] = wb_daily_report.sheetnames
-    sheets_name = tuple(full_sheets_name[int(start_day - 1) : int(end_day - 1)])
+    sheets_name = tuple(full_sheets_name[int(start_day - 1) : int(end_day + 1)])
 
     full_data = []
 
@@ -39,8 +41,14 @@ def load_is_daily(file_path, start_day, end_day):
             ws_daily_report["B9"].value,  # تعداد کامیون
         ]
         # اگر حتی یکی از مقادیر عددی نبود
-        if any(not isinstance(day, (int, float)) for day in data[1:]):
+        if any(
+            val is None
+            or (isinstance(val, str) and val.strip() == "")
+            or not isinstance(val, (int, float, Decimal))
+            for val in data[1:]
+        ):
             full_data.append(data)
+            continue
 
         # دریافت اطلاعات مربوط به سل های مورد بررسی
         clean_data = [
@@ -76,4 +84,4 @@ def load_is_daily(file_path, start_day, end_day):
 
 
 # if __name__ == "__main__":
-#     print(load_is_daily(file_path="daily.xlsx", start_day=1, end_day=30))
+#     print(load_is_daily(file_path="daily.xlsx", start_day=1, end_day=31))
