@@ -85,3 +85,6 @@ msedgedriver.exe
 chrome_profile/
 chrome_profile_*/
 
+
+# tester file 
+sample-data-for-test-check-data.txt

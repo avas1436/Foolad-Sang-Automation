@@ -1,5 +1,6 @@
 from decimal import ROUND_HALF_UP, Decimal
 
+import click
 from openpyxl import load_workbook
 
 
@@ -28,7 +29,7 @@ def load_is_daily(file_path, start_day, end_day):
         ws_daily_report = wb_daily_report[day]
 
         data = [
-            ws_daily_report["F9"].value,  # تاریخ
+            ws_daily_report["E4"].value,  # تاریخ
             ws_daily_report["F9"].value,  # ذرات زیر ۱۰
             ws_daily_report["F10"].value,  # ذرات ۰ تا 5
             ws_daily_report["G10"].value,  # ذرات ۵ تا ۱۰
@@ -38,13 +39,12 @@ def load_is_daily(file_path, start_day, end_day):
             ws_daily_report["B9"].value,  # تعداد کامیون
         ]
         # اگر حتی یکی از مقادیر عددی نبود
-        if any(not isinstance(day_test, (int, float)) for day_test in data):
-            click.echo(message=f"❌ Data of day {day} is empty - skipping...")
-            continue
+        if any(not isinstance(day, (int, float)) for day in data[1:]):
+            full_data.append(data)
 
         # دریافت اطلاعات مربوط به سل های مورد بررسی
         clean_data = [
-            str(data[0]).strip().split("/"),
+            rf"{data[0]}",
             Decimal(str(data[1])).quantize(
                 Decimal("0.1"), rounding=ROUND_HALF_UP
             ),  # ذرات زیر ۱۰
@@ -72,6 +72,8 @@ def load_is_daily(file_path, start_day, end_day):
 
     wb_daily_report.close()
 
-    return full_data
+    return tuple(full_data)
 
 
+# if __name__ == "__main__":
+#     print(load_is_daily(file_path="daily.xlsx", start_day=1, end_day=30))
