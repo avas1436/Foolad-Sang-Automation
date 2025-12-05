@@ -1,67 +1,56 @@
-import click
+import typer
+
+# @click.group()
+# def cli():
+#     """✨ Welcome to Foolad Sang Automation app ✨"""
+#     pass
 
 
-@click.group()
-def cli():
-    """✨ Welcome to Foolad Sang Automation app ✨"""
-    pass
-
-
-@cli.command(help="Validate the accuracy and consistency of IS daily reports")
+# @cli.command(help="Validate the accuracy and consistency of IS daily reports")
 def tester():
-    click.secho(
-        message="""
+    print(
+        """
         ⚠️ The 'tester' command is currently deprecated and no longer maintained.
-        """,
-        fg="red",
-        bold=True,
+        """
     )
 
 
-@cli.command(help="Interact seamlessly with the production database")
+# @cli.command(help="Interact seamlessly with the production database")
 def sql():
-    click.secho(
-        message="""
+    print(
+        """
         📂 SQL module is under development. Database operations will be available soon.
-        """,
-        fg="red",
-        bold=True,
+        """
     )
 
 
-@cli.command(help="Generate insightful visualizations from SQL data")
+# @cli.command(help="Generate insightful visualizations from SQL data")
 def plotter():
-    click.secho(
-        message="""📊 Plotter module is not yet implemented.
-        Visualization features will be added later.""",
-        fg="red",
-        bold=True,
+    print(
+        """📊 Plotter module is not yet implemented.
+        Visualization features will be added later."""
     )
 
 
-@cli.command(help="Evaluate and monitor FSM production performance")
+# @cli.command(help="Evaluate and monitor FSM production performance")
 def analyzer():
-    click.secho(
-        message="""
+    print(
+        """
         📈 Analyzer module is currently inactive. Performance analysis tools will be
         integrated soon.
-        """,
-        fg="red",
-        bold=True,
+        """
     )
 
 
-@cli.command(
-    help="Scrape and analyze data from Eitta group and share insights automatically"
-)
+# @cli.command(
+#     help="Scrape and analyze data from Eitta group and share insights automatically"
+# )
 def eitta():
-    click.secho(
-        message="""
+    print(
+        """
         💬 Eitta module is in progress. Automated scraping and reporting will be 
         enabled in future releases.
-        """,
-        fg="red",
-        bold=True,
+        """
     )
 
 
