@@ -1,8 +1,9 @@
 import typer
-from check_data import checker
-from load_is_daily import load_is_daily
 from rich import print
 from rich.panel import Panel
+
+from tester.check_data import checker
+from tester.load_is_daily import load_is_daily
 
 app = typer.Typer(help="📊 Validate the accuracy and consistency of IS daily reports")
 
@@ -28,7 +29,9 @@ def tester():
 
     print(
         Panel.fit(
-            help_text, title="[bold magenta]HELP[/bold magenta]", border_style="blue"
+            help_text,
+            title="[bold magenta]Tester HELP[/bold magenta]",
+            border_style="blue",
         )
     )
     # گرفتن ورودی‌ها به صورت تعاملی

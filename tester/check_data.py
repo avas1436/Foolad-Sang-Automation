@@ -12,7 +12,6 @@ def convert_jdate(date: str):
 
 
 def checker(data, first_date):
-
     # اگر تاریخ ندادیم اولین روز رو قرار بده به عنوان معیار
     if first_date == "":
         first_date = convert_jdate(date=data[0][0])
@@ -26,7 +25,7 @@ def checker(data, first_date):
             for value in record[1:]
         ):
             print(
-                f"[bold red] Day {i+1}[/bold red] → [yellow]Data is empty[/yellow] — [italic]skipping...[/italic]"
+                f"[bold red] Day {i + 1}[/bold red] → [yellow]Data is empty[/yellow] — [italic]skipping...[/italic]"
             )
             continue
 
@@ -36,7 +35,7 @@ def checker(data, first_date):
 
         if record_date != excepted_date:
             print(
-                f"[bold magenta] Day {i+1}[/bold magenta] → [red]Date mismatch![/red] Expected: {excepted_date}, Got: {record_date}"
+                f"[bold magenta] Day {i + 1}[/bold magenta] → [red]Date mismatch![/red] Expected: {excepted_date}, Got: {record_date}"
             )
 
         # قسمت مربوط به تعیین مشکلات دانه بندی
@@ -44,7 +43,7 @@ def checker(data, first_date):
             record[1] + record[4] + record[5] != Decimal("100.00")
         ):
             print(
-                f"[bold yellow] Day {i+1}: Granulation calculation error[/bold yellow]"
+                f"[bold yellow] Day {i + 1}: Granulation calculation error[/bold yellow]"
             )
             if record[2] + record[3] != record[1]:
                 print(
@@ -62,11 +61,11 @@ def checker(data, first_date):
                 avg_tonnage = record[6] / record[7]
                 if avg_tonnage < Decimal("24.2") or avg_tonnage > Decimal("26.8"):
                     print(
-                        f"[bold yellow] Day {i+1}: Tonnage or number of truck is not correct![/bold yellow]"
+                        f"[bold yellow] Day {i + 1}: Tonnage or number of truck is not correct![/bold yellow]"
                     )
                     print("[dim]   ─────────────────────────[/dim]")
         else:
-            print(f"[bold green] Day {i+1}: Everything looks great![/bold green]")
+            print(f"[bold green] Day {i + 1}: Everything looks great![/bold green]")
 
 
 # how to use

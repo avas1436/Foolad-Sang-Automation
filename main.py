@@ -75,6 +75,7 @@ if __name__ == "__main__":
         )
     )
 
+    tester()
     # while True:
     #     try:
     #         # گرفتن دستور از کاربر
