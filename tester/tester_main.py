@@ -13,7 +13,7 @@ def tester():
     help_text = """[bold cyan]📊 Daily Excel Report Checker CLI[/bold cyan]
 
     Usage:
-        python cli.py
+        python tester_main.py
 
     Parameters (will be asked interactively):
         [yellow]-f, --file[/yellow]   Path to the Excel file (default: daily.xlsx)
@@ -46,6 +46,10 @@ def tester():
     print("[yellow]🔎 Checking data...[/yellow]")
     checker(data=data, first_date=date)
     print("[bold green]🎉 Done![/bold green]")
+
+
+def main_tester():
+    app()
 
 
 if __name__ == "__main__":
